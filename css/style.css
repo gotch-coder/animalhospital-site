@@ -112,6 +112,7 @@ h2::after {
   display: flex;
   line-height: calc(33/ 18 );
   align-items: center;
+  transition: all 0.5s ease-in-out;
 }
 .title-icon {
   display: flex;
@@ -127,27 +128,27 @@ h2::after {
   align-items: center;
   display: flex;
   height: 5rem;
+  background: #fff;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.header-nav-btn:hover {
+  color: #a9a9a9;
+  /* background: #fff; */
+  opacity: 0.5;
 }
 .header-nav-list {
   font-size: 1.4rem;
-  align-items: center;
+  /* align-items: center; */
   line-height: calc(33 / 14);
   column-gap: 1rem;
   display: flex;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-right: 6rem;
 }
 .title:hover {
   cursor: pointer;
   opacity: 0.5;
-  transition: all 0.5s ease-in-out;
-}
-.header-nav-list li:hover {
-  cursor: pointer;
-  opacity: 0.5;
-  color: #a9a9a9;
-  background-color: #fff;
-  transition: all 0.5s ease-in-out;
 }
 
 /* main */
@@ -719,9 +720,12 @@ p.mail {
     line-height: calc(33 / 25);
   }
   .inner {
-    width: 375px;
-    min-width: 100%;
+    /* width: 375px; */
+    /* min-width: 100%; */
+    width: 100%;
+    max-width: 375px;
     padding: 0 20px;
+    box-sizing: border-box;
   }
 
   /* header */
