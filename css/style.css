@@ -21,7 +21,7 @@ a {
   max-width: 100%;
   margin: 0 auto;
   width: 940px;
-  padding: 0 30px;
+  margin: 0 30px;
 }
 img {
   width: 100%;
@@ -720,11 +720,8 @@ p.mail {
     line-height: calc(33 / 25);
   }
   .inner {
-    /* width: 375px; */
-    /* min-width: 100%; */
     width: 100%;
-    max-width: 375px;
-    padding: 0 20px;
+    margin: 0 20px;
     box-sizing: border-box;
   }
 
