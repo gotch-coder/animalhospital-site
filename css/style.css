@@ -18,10 +18,11 @@ a {
 }
 
 .inner {
+  width: 910px;
   max-width: 100%;
+  /* width: 100%; */
   margin: 0 auto;
-  width: 940px;
-  margin: 0 30px;
+  padding: 0 15px;
 }
 img {
   width: 100%;
@@ -560,7 +561,7 @@ p.mail {
 
 .contact form table tr td {
   padding: 15px 0;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.8;
   font-weight: 500;
   color: #505050;
@@ -720,8 +721,7 @@ p.mail {
     line-height: calc(33 / 25);
   }
   .inner {
-    width: 100%;
-    margin: 0 20px;
+    padding: 0 20px;
     box-sizing: border-box;
   }
 
@@ -785,6 +785,12 @@ p.mail {
     margin-bottom: 0;
     text-align: center;
   }
+  h2 {
+    font-size: 2.5rem;
+    line-height: calc(35 / 25);
+    margin-bottom: 0;
+    text-align: center;
+  }
   .footpath {
     position: absolute;
     width: 68px;
@@ -840,6 +846,14 @@ p.mail {
     width: 100%;
     margin-top: 17px;
   }
+  h3 {
+    font-size: 2.0rem;
+    line-height: calc(30 / 20);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 17px;
+  }
   .summary3 {
     font-size: 1.6rem;
     font-weight: 500;
@@ -864,6 +878,10 @@ p.mail {
     line-height: calc(30 / 20);
     margin-top: 21px;
   }
+  h3 {
+    line-height: calc(30 / 20);
+    margin-top: 21px;
+  }
   .service-about {
     font-size: 1.6rem;
     line-height: calc(30 / 16);
@@ -880,6 +898,11 @@ p.mail {
     padding: 24px 0 26px 9px;
   }
   .news dl dt {
+    margin: 0;
+    width: 100%;
+    margin-top: 2px;
+  }
+  .news dl h3 {
     margin: 0;
     width: 100%;
     margin-top: 2px;
