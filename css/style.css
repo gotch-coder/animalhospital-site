@@ -196,7 +196,14 @@ h1 {
   padding-top: 5.7rem;
   padding-bottom: 6.3rem;
 }
-.about-title {
+/* .about-title {
+  font-size: 3.0rem;
+  font-weight: bold;
+  line-height: calc(50 / 30);
+  color: #0D96A0;
+  margin-bottom: 11px;
+} */
+h2 {
   font-size: 3.0rem;
   font-weight: bold;
   line-height: calc(50 / 30);
@@ -246,7 +253,12 @@ h1 {
 .strength figure picture {
   width: 50%;
 }
-.summary1 {
+/* .summary1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: calc(33 / 22);
+} */
+.figcaption h3 {
   font-size: 2.2rem;
   font-weight: bold;
   line-height: calc(33 / 22);
@@ -277,7 +289,14 @@ h1 {
   text-align: center;
   margin-top: 47px;
 }
-.service-name {
+/* .service-name {
+  font-size: 2.0rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: calc(25 / 20);
+  margin-top: 16px;
+} */
+h3 {
   font-size: 2.0rem;
   font-weight: bold;
   text-align: center;
@@ -353,11 +372,19 @@ h1 {
   margin-left: 5px;
 }
 
-.news dl dt {
+/* .news dl dt {
   font-size: 2.0rem;
   font-weight: bold;
   line-height: calc(25/ 20);
   color: #0D96A0;
+  margin: 0 45px 0 27px;
+  width: 16rem;
+} */
+h3 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  line-height: calc(25/ 20);
+  /* color: #0D96A0; */
   margin: 0 45px 0 27px;
   width: 16rem;
 }
