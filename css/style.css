@@ -203,7 +203,7 @@ h1 {
   color: #0D96A0;
   margin-bottom: 11px;
 } */
-h2 {
+.about-box h2 {
   font-size: 3.0rem;
   font-weight: bold;
   line-height: calc(50 / 30);
