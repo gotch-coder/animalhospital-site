@@ -258,7 +258,7 @@ h1 {
   font-weight: bold;
   line-height: calc(33 / 22);
 } */
-.figcaption h3 {
+h3 {
   font-size: 2.2rem;
   font-weight: bold;
   line-height: calc(33 / 22);
@@ -296,7 +296,7 @@ h1 {
   line-height: calc(25 / 20);
   margin-top: 16px;
 } */
-h3 {
+h4 {
   font-size: 2.0rem;
   font-weight: bold;
   text-align: center;
@@ -357,14 +357,14 @@ h3 {
   border-bottom: 1px solid #707070;
 }
 
-.news dl {
+.news-date dl {
   display: flex;
   align-items: center;
   border-top: 1px solid #707070;
   padding: 14px;
 }
 
-.news dl dd:nth-of-type(1) {
+.news-date dl dd:nth-of-type(1) {
   font-size: 1.7rem;
   line-height: calc(25 / 17);
   font-weight: bold;
@@ -380,11 +380,11 @@ h3 {
   margin: 0 45px 0 27px;
   width: 16rem;
 } */
-h3 {
+h5 {
   font-size: 2.0rem;
   font-weight: bold;
   line-height: calc(25/ 20);
-  /* color: #0D96A0; */
+  color: #0D96A0;
   margin: 0 45px 0 27px;
   width: 16rem;
 }
@@ -409,7 +409,7 @@ h3 {
 
 /* news */
 #news {
-  padding-top: 68px;
+  padding-top: 65px;
   padding-bottom: 70px;
   background-color: #E6F4F5;
 }
