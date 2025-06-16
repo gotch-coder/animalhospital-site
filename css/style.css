@@ -68,14 +68,16 @@ h2::before {
   position: absolute;
   top: 4px;
   margin-left: -46px;
-  content: url(../images/icon-1.svg);
+  /* content: url(../images/icon-1.svg); */
+  content: url(../images/icon_01.svg)
 }
 
 h2::after {
   position: absolute;
   top: 4px;
   margin-left: 20px;
-  content: url(../images/icon-1.svg);
+  /* content: url(../images/icon-1.svg); */
+  content: url(../images/icon_01.svg);
 }
 /* 背景色 */
 .bg-green {
@@ -389,7 +391,7 @@ h5 {
   width: 16rem;
 }
 
-.news dl dd:nth-of-type(2) {
+.news-date dl dd:nth-of-type(2) {
   font-size: 1.7rem;
   font-weight: 500;
   line-height: calc(30 / 17);
@@ -483,29 +485,34 @@ time {
 }
 
 /* access */
-.access {
+#access {
   padding-top: 64px;
-  padding-bottom: 68px;
+  padding-bottom: 75px;
 }
-.access figure {
+#access figure {
   display: flex;
   margin-top: 42px;
 }
 
-.access figure iframe {
+#access figure iframe {
   width: 44rem;
   height: 30rem;
   margin-right: 47px;
 }
-.access figure figcaption {
+#access figure figcaption {
   width: 390px;
 }
-.access figure figcaption h4 {
+#access figure figcaption h4 {
   font-size: 2.2rem;
   font-weight: bold;
   line-height: calc(33 / 22);
 }
-.access figure figcaption address {
+#access figure figcaption h6 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: calc(33 / 22);
+}
+#access figure figcaption address {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: calc(40 / 18);
@@ -525,29 +532,29 @@ p.mail {
   margin-top: 5px;
 }
 
-.access figure figcaption address .tel a {
+#access figure figcaption address .tel a {
   font-size: 2.5rem;
   font-weight: bold;
   color: #0D96A0;
   line-height: calc(40 / 25);
 }
-.access figure figcaption address .tel a:hover{
+#access figure figcaption address .tel a:hover{
   cursor: pointer;
   opacity: 0.6;
   transition: all 0.5s ease-in-out;
 }
 
-.access figure figcaption address .mail a:hover {
+#access figure figcaption address .mail a:hover {
   cursor: pointer;
   opacity: 0.6;
   transition: all 0.5s ease-in-out;
 }
-.access figure figcaption .access-foot {
+#access figure figcaption .access-foot {
   border-top: 1px solid #707070;
   border-bottom: 1px solid #707070;
   padding: 14px 0;
 }
-.access-foot p {
+#access-foot p {
   line-height: calc(40 / 18);
 }
 
