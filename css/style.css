@@ -103,16 +103,12 @@ h2::after {
   margin: 0 auto;
 }
 
-.nav-list li {
-  list-style: none;
-}
-.nav-list li:not(:last-of-type) {
-  margin-right: 15px;
-}
 .title {
   font-size: 1.8rem;
   font-weight: bold;
   display: flex;
+  text-decoration: none;
+  color: inherit;
   line-height: calc(33/ 18 );
   align-items: center;
   transition: all 0.5s ease-in-out;
@@ -126,6 +122,12 @@ h2::after {
   height: 50px;
   align-items: center;
   margin-left: 1.1rem;
+}
+.nav-list li {
+  list-style: none;
+}
+.nav-list li:not(:last-of-type) {
+  margin-right: 15px;
 }
 .header-nav-btn {
   align-items: center;
@@ -552,7 +554,7 @@ p.mail {
 #access figure figcaption .access-foot {
   border-top: 1px solid #707070;
   border-bottom: 1px solid #707070;
-  padding: 14px 0;
+  padding: 21px 0;
 }
 #access-foot p {
   line-height: calc(40 / 18);
@@ -560,7 +562,7 @@ p.mail {
 
 /* contact */
 #contact {
-  padding-top: 68px;
+  padding-top: 62px;
   padding-bottom: 81px;
   width: 100%;
 }
