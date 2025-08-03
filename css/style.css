@@ -754,9 +754,9 @@ p.mail {
   .sp-none {
     display: none!important;
   }
-  /* * {
+  * {
     outline: 1px solid blue;
-  } */
+  }
 /* ↑全体の枠のラインを出すときに使用する */
   h2 {
     font-size: 2.5rem;
@@ -776,7 +776,8 @@ p.mail {
     margin-left: 0;
   }
   .header-content {
-    max-width: 375px;
+    /* max-width: 375px; */
+    max-width: 100%;
     margin-left: calc(22 / 375* 100vw);
   }
   .title-text {
@@ -1025,7 +1026,8 @@ p.mail {
     margin-right: 0;
   }
   #access figure figcaption {
-    width: 334px;
+    /* width: 334px; */
+    min-width: 100%;
     margin-top: 28px;
   }
   #access figure figcaption address {
