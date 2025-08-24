@@ -67,7 +67,14 @@ h2 {
   line-height: 1.32;
   position: relative;
   color: #505050;
-  /* margin-top: 5px; */
+}
+.about_title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: calc(50 / 30);
+  color: #505050;
+
 }
 
 h2::before {
@@ -219,6 +226,7 @@ h1 {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: calc(33 / 18);
+  position: relative;
 }
 .about-box {
   text-align: center;
@@ -237,10 +245,20 @@ h1 {
 .about-box {
   text-align: center;
   width: 100%;
-  position: relative;
-  background: url("images/icon_02.svg") no-repeat right 20px center, #fdd;
-  background-size: 150px auto; 
-  min-height: 200px;
+  /* position: relative; */
+  /* background: url("images/icon_02.svg") no-repeat right 20px center, #fdd; */
+  /* background-size: 150px auto;  */
+  /* min-height: 200px; */
+}
+.about-text::after {
+  content:'';
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 90px;
+  height: 90px;
+  background: url(../images/icon_02.svg) no-repeat right 20px ;
+
 }
 
 
@@ -276,7 +294,12 @@ h1 {
   font-weight: bold;
   line-height: calc(33 / 22);
 } */
-h3 {
+/* h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: calc(33 / 22);
+} */
+.strength_title {
   font-size: 2.2rem;
   font-weight: bold;
   line-height: calc(33 / 22);
@@ -307,6 +330,12 @@ h3 {
   text-align: center;
   margin-top: 47px;
 }
+.service_title {
+  font-size: 2.0rem;
+  font-weight: bold;
+  line-height: calc(25 / 20);
+  margin-top: 16px;
+}
 /* .service-name {
   font-size: 2.0rem;
   font-weight: bold;
@@ -314,13 +343,13 @@ h3 {
   line-height: calc(25 / 20);
   margin-top: 16px;
 } */
-h4 {
+/* h4 {
   font-size: 2.0rem;
   font-weight: bold;
   text-align: center;
   line-height: calc(25 / 20);
   margin-top: 16px;
-}
+} */
 .service-about {
   font-size: 1.7rem;
   font-weight: 500;
