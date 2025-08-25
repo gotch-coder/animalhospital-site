@@ -410,14 +410,14 @@ h1 {
   margin-top: 48px;
   border-bottom: 1px solid #707070;
 }
-.news-date {
+/* .news-date {
   transition: all 0.5s ease-in-out;
-}
+} */
 
 
-  .news-list a {
+  /* .news-list a {
     display: block;
-  }
+  } */
   
   /* ニュースリスト全体 */
 #news .news-list {
@@ -434,15 +434,14 @@ h1 {
   align-items: center;
   padding: 14px;
   border-radius: 8px;
-  transition: background 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   height: 100%;
 }
 
 .news-item:hover {
   /* background: #f9f9f9; */
-    transition: all 0.5s ease-in-out;
-    color: #a9a9a9;
-    opacity: 0.5;
+  color: #a9a9a9;
+  opacity: 0.5;
 }
 
 /* 日付 */
@@ -456,7 +455,17 @@ h1 {
 }
 
 /* 本文 */
-.news-text {
+/* .news_title { */
+.news-item h3 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  line-height: calc(25/ 20);
+  color: #0D96A0;
+  margin: 0 45px 0 27px;
+  width: 16rem;
+}
+/* .news-text { */
+.news-item p {
   font-size: 1.7rem;
   font-weight: 500;
   line-height: calc(30 / 17);
@@ -469,31 +478,37 @@ h1 {
   color: #505050;
 }
 
+/* .news-date:hover {
+  background: #f9f9f9;
+    transition: all 0.5s ease-in-out;
+    color: #a9a9a9;
+    opacity: 0.5;
+} */
 /* リンク全体 */
-.news-list a {
+/* .news-list a {
   display: block;
   text-decoration: none;
   color: inherit;
-}
+} */
 
 
 
 
-.news-date dl {
+/* .news-date dl {
   display: flex;
   align-items: center;
   border-top: 1px solid #707070;
   padding: 14px;
   transition: all 0.5s ease-in-out;
-}
+} */
 
-.news-date dl dd:nth-of-type(1) {
+/* .news-date dl dd:nth-of-type(1) {
   font-size: 1.7rem;
   line-height: calc(25 / 17);
   font-weight: bold;
   color: #505050;
   margin-left: 5px;
-}
+} */
 
 /* .news dl dt {
   font-size: 2.0rem;
@@ -503,16 +518,8 @@ h1 {
   margin: 0 45px 0 27px;
   width: 16rem;
 } */
-h5 {
-  font-size: 2.0rem;
-  font-weight: bold;
-  line-height: calc(25/ 20);
-  color: #0D96A0;
-  margin: 0 45px 0 27px;
-  width: 16rem;
-}
 
-.news-date dl dd:nth-of-type(2) {
+/* .news-date dl dd:nth-of-type(2) {
   font-size: 1.7rem;
   font-weight: 500;
   line-height: calc(30 / 17);
@@ -522,18 +529,18 @@ h5 {
   -webkit-line-clamp: 1;
   width: 50rem;
   color: #505050;
-}
+} */
 
 /* .news-date a:hover {
   transition: all 0.5s ease-in-out;
   color: #a9a9a9;
   opacity: 0.5;
 } */
-.news-date dl:hover {
-  /* transition: all 0.5s ease-in-out; */
+/* .news-date dl:hover {
+  transition: all 0.5s ease-in-out;
   color: #a9a9a9;
   opacity: 0.5;
-}
+} */
 
 
 
@@ -980,9 +987,12 @@ p.mail {
   h5 {
     margin: 0 165px 0 0;
   }
-  .section-second {
+  /* .section-second {
     padding-top: 45px;
     padding-bottom: 50px;
+  } */
+  .news-item {
+    display: block;
   }
 
 
@@ -990,17 +1000,21 @@ p.mail {
     display: block;
     padding: 24px 0 26px 9px;
   }
-  #news dl dt {
+  /* #news dl dt { */
+  .news-item {
     margin: 0;
     width: 100%;
     margin-top: 2px;
   }
-  #news dl h3 {
+  /* #news dl h3 { */
+  .news-item h3 {
     margin: 0;
     width: 100%;
     margin-top: 2px;
+    text-align: left;
   }
-  #news dl dd:nth-of-type(2) {
+  /* #news dl dd:nth-of-type(2) { */
+  .news-item p {
     width: 100%;
     overflow: hidden;
     display: -webkit-box;
@@ -1009,46 +1023,48 @@ p.mail {
     font-size: 1.6rem;
     line-height: calc(30 / 16);
   }
-  #news dl dd:nth-of-type(1) {
+  /* #news dl dd:nth-of-type(1) {
     margin-left: 0;
-  }
+  } */
 
-  .news-topic {
+  /* .news-topic {
   flex-direction: column;
   align-items: flex-start;
-  }
-  .news-topic a {
+  } */
+  /* .news-topic a {
     display: block;
     align-items: flex-start;
     padding-top: 22px;
     padding-bottom: 22px;
     padding-left: 10px;
-  }
-  time[datetime="0000-00-00"] {
+  } */
+  /* time[datetime="0000-00-00"] { */
+  .news-item time {
     width: 100%;
     display: block;
     font-size: 1.7rem;
     line-height: calc(25/ 17 );
     font-weight: bold;
+    margin-left: 0;
   }
-  .topic-list {
+  /* .topic-list {
     line-height: calc(25 / 20);
     margin-left: 0;
     width: 100%;
     margin-top: 8px;
-  }
-  .custom-text {
+  } */
+  /* .custom-text {
     font-size: 1.6rem;
     font-weight: 500;
     padding-left: 0;
     line-height: calc(30 / 16);
     margin-left: 0;
     -webkit-line-clamp: 2;   /* 表示したい行数 */
-  }
-   .news-topic {
+  } */
+   /* .news-topic {
     height: 100%;
-   }
-  .topic a {
+   } */
+  /* .topic a {
     display: flex;
     width: 100%;
     padding-left: 18px;
@@ -1056,7 +1072,7 @@ p.mail {
     padding-top: 24px;
     padding-bottom: 27px;
     transition: all 0.5s ease-in-out;
-  }
+  } */
 
     /* access */
    #access {
