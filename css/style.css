@@ -139,6 +139,14 @@ h2::after {
 .title-img {
   height: 50px;
 }
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-title-icon {
+  width: 25.49px;
+}
 
 .nav-list li {
   list-style: none;
