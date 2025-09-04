@@ -556,12 +556,6 @@ h1 {
   padding-top: 64px;
   padding-bottom: 75px;
 }
-#access figure {
-  display: flex;
-  margin-top: 42px;
-  align-items: stretch;
-}
-
 #access figure iframe {
   width: 44rem;
   /* height: 30rem; */
@@ -575,24 +569,106 @@ h1 {
   justify-content: space-between;
 }
 #access figure {
+  display: flex;
+  margin-top: 42px;
   align-items: stretch;
 }
+/* ↓下 */
+.access {
+  padding: 64px 0 75px;
+}
 
+.access__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.access__figure {
+  display: flex;
+  margin-top: 42px;
+  align-items: stretch;
+  gap: 47px;
+}
+
+.access__map {
+  width: 44rem;
+  height: 30rem;
+}
+
+.access__info {
+  width: 390px;
+}
+/* 上↑ */
 .access-info__title {
   font-size: 2.2rem;
   font-weight: bold;
   line-height:  calc(33 / 22);
 }
-/* .access_title p {
-  font-size: 2.2rem;
-  font-weight: bold;
-  line-height: calc(33 /22);
-} */
 .access-info__address-text {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: calc(27 / 18);
 }
+/* .access-info__address-text {
+  
+} */
+.access-info__tel {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: calc(27 / 18);
+}
+.access-info__tel a {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: calc(40 / 25);
+  color: #0D96A0;
+}
+
+.access-info__tel a:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .access-info__tel a {
+    pointer-events: none;
+  }
+}
+
+.access-info__mail {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: calc(27 / 18);
+}
+.access-info__mail a:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
+}
+.access-info__hours {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: calc(40 / 18);
+  border-top: 1px solid #707070;
+}
+.access-info__hours:last-of-type {
+  border-bottom: 1px solid #707070;
+}
+/* #access figure {
+  display: flex;
+  margin-top: 42px;
+  align-items: stretch;
+} */
+/* .access__title figure {
+  display: flex;
+  margin-top: 42px;
+  align-items: stretch;
+} */
+/* .access_title p {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: calc(33 /22);
+} */
 /* #access figure figcaption p {
   font-size: 2.2rem;
   font-weight: bold;
@@ -605,50 +681,50 @@ h1 {
   margin: 15px 0 14px;
 } */
 
-#access figure figcaption tel p {
+/* #access figure figcaption tel p {
   margin-top: 5px;
-}
-@media (max-width: 768px) {
+} */
+/* @media (max-width: 768px) {
   #access figure figcaption tel p {
     margin-top: 5px;
-}
+} */
 
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   p.tel {
     pointer-events: none;
   }
-}
+} */
 
-p.mail {
+/* p.mail {
   margin-top: 5px;
-}
+} */
 
-#access figure figcaption address .tel a {
+/* #access figure figcaption address .tel a {
   font-size: 2.5rem;
   font-weight: bold;
   color: #0D96A0;
   line-height: calc(40 / 25);
-}
-#access figure figcaption address .tel a:hover{
+} */
+/* #access figure figcaption address .tel a:hover{
   cursor: pointer;
   opacity: 0.6;
   transition: all 0.5s ease-in-out;
-}
+} */
 
-#access figure figcaption address .mail a:hover {
+/* #access figure figcaption address .mail a:hover {
   cursor: pointer;
   opacity: 0.6;
   transition: all 0.5s ease-in-out;
-}
-#access figure figcaption .access-foot {
+} */
+/* #access figure figcaption .access-foot {
   border-top: 1px solid #707070;
   border-bottom: 1px solid #707070;
   padding: 21px 0;
-}
-#access-foot p {
+} */
+/* #access-foot p {
   line-height: calc(40 / 18);
-}
+} */
 
 /* contact */
 #contact {
