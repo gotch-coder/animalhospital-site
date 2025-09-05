@@ -556,8 +556,26 @@ h1 {
   padding-top: 64px;
   padding-bottom: 75px;
 }
+
+.access__map {
+  /* width: 44rem; */
+  /* height: 30rem; */
+}
+#access iframe {
+  /* flex: 1; */
+  width: 100%;       /* 横幅いっぱいに広げる */
+  /* height: 450px;     高さは固定（好みに応じて変更） */
+  border: 0;         /* 枠線を消す */
+  display: block;    /* 不要な余白防止 */
+}
+
+#access figcaption {
+  flex: 1;
+  display: flex;
+}
+
 #access figure iframe {
-  width: 44rem;
+  /* width: 44rem; */
   /* height: 30rem; */
   height: auto;
   margin-right: 47px;
@@ -570,6 +588,7 @@ h1 {
 }
 #access figure {
   display: flex;
+  align-items: flex-start;
   margin-top: 42px;
   align-items: stretch;
 }
@@ -590,10 +609,8 @@ h1 {
   gap: 47px;
 }
 
-.access__map {
-  width: 44rem;
-  height: 30rem;
-}
+
+
 
 .access__info {
   width: 390px;
@@ -1218,9 +1235,9 @@ h1 {
   #access figure figcaption address {
     margin: 7px 0;
   }
-  #access figure figcaption address p {
+  /* #access figure figcaption address p {
     font-size: 1.6rem;
-  }
+  } */
   #access figure figcaption .access-foot {
     padding: 13px 0;
     margin-top: 16px;
