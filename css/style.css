@@ -347,7 +347,7 @@ h1 {
 /* news */
 #news {
   padding-top: 65px;
-  padding-bottom: 70px;
+  padding-bottom: 67px;
   background-color: #E6F4F5;
 }
 .news-date {
@@ -440,7 +440,8 @@ h1 {
   font-weight: bold;
   line-height: calc(25/ 20);
   color: #0D96A0;
-  margin: 0 45px 0 27px;
+  /* margin: 0 45px 0 27px; */
+  margin: 0 27px 0 27px;
   width: 16rem;
 }
 /* .news-text { */
@@ -473,7 +474,7 @@ h1 {
   /* access */
 #access {
   padding-top: 64px;
-  padding-bottom: 75px;
+  padding-bottom: 70px;
 }
 .access__title {
   font-size: 2.5rem;
@@ -532,7 +533,7 @@ h1 {
 .access-info__tel {
   font-size: 1.8rem;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 15px;
   line-height: calc(27 / 18);
 }
 .access-info__tel a {
@@ -592,7 +593,7 @@ h1 {
 
 /* contact */
 #contact {
-  padding-top: 62px;
+  padding-top: 61px;
   padding-bottom: 81px;
   width: 100%;
 }
@@ -602,7 +603,7 @@ h1 {
 }
 .contact__head {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 26px;
   font-size: 1.7rem;
   font-weight: 500;
   line-height: calc(30 / 17);
@@ -617,34 +618,39 @@ h1 {
 
 .contact form table tr {
  display: flex;
- justify-content: space-between;
+ /* justify-content: space-between; */
+ /* display: table-row; */
+ align-items: flex-start;
 }
 
 #contact form table tr th {
   padding: 14px 0;
   font-size: 2.0rem;
   font-weight: bold;
-  line-height: calc(42 / 20);
+  line-height: calc(33 / 20);
   color: #505050;
 }
 
 .contact form table tr td {
   padding: 15px 0;
   font-size: 1.8rem;
-  line-height: 1.8;
+  line-height: calc(33 / 20);
   font-weight: 500;
   color: #505050;
+  margin-left: 20px;
 }
 
-.contact form table tr td input {
-  background: #fff;
-  min-width: 700px;
-  padding: 5px;
-}
+/* background: #fff;
+min-width: 709px;
+padding: 5px;
+} */
 
+.contact form table tr td input,
 .contact form table tr td textarea {
   background: #fff;
-  min-width: 700px;
+  width: 100%;
+  min-width: auto;
+  box-sizing: border-box;
   padding: 5px;
   resize: none;
 }
