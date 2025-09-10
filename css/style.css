@@ -609,16 +609,18 @@ h1 {
   line-height: calc(30 / 17);
 }
 
+.contact form {
+ margin-top: 26px;
+}
 .form-group {
   display: flex;
   align-items: flex-start;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .contact form .form-row {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
   margin-bottom: 15px;
 }
 
@@ -627,74 +629,28 @@ h1 {
   font-weight: bold;
   color: #505050;
   white-space: nowrap;
-  flex: 0 0 120px; /* 固定幅 */
+  flex: 0 0 140px; /* 固定幅 */
 }
 
 .contact form input,
 .contact form textarea {
+  width: 100%;
   flex: 1;
   background: #fff;
   padding: 8px;
   box-sizing: border-box;
   font-size: 1.6rem;
   resize: none;
+  margin-left: 32px;
 }
 
-
-
-.contact form {
- margin-top: 26px;
-}
-
-.contact form table {
-  width: 100%;
-}
-
-.contact form table tr {
- display: flex;
- /* justify-content: space-between; */
- /* display: table-row; */
- align-items: flex-start;
-}
-
-#contact form table tr th {
-  padding: 14px 0;
-  font-size: 2.0rem;
-  font-weight: bold;
-  line-height: calc(33 / 20);
-  color: #505050;
-}
-
-.contact form table tr td {
-  padding: 15px 0;
-  font-size: 1.8rem;
-  line-height: calc(33 / 20);
-  font-weight: 500;
-  color: #505050;
-  margin-left: 20px;
-}
-
-/* background: #fff;
-min-width: 709px;
-padding: 5px;
-} */
-
-.contact form table tr td input,
-.contact form table tr td textarea {
-  background: #fff;
-  width: 100%;
-  min-width: auto;
-  box-sizing: border-box;
-  padding: 5px;
-  resize: none;
-}
 .contact form .button {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: calc(33 / 25);
   width: 200px;
   height: 50px;
-  padding: 5px 0;
+  /* padding: 5px 0; */
   background: #0D96A0;
   color: #fff;
   display: flex;
@@ -709,6 +665,7 @@ padding: 5px;
 .contact form .button:hover {
   color: #a9a9a9;
   opacity: 0.5;
+  /* background: red; */
 }
 .space2 {
   display: inline-block;
@@ -723,28 +680,6 @@ padding: 5px;
   transition: all 0.5s ease-in-out;
 }
 
-.access-map {
-  width: 100%;
-  position: relative;
-  flex-grow: 1;
-  /* 高さを可能な限り伸ばす */
-  padding-top: 0;
-}
-
-.information-mail a {
-  transition: all 0.5s ease-in-out;
-  word-break: break-all; /* 単語の途中でも折り返し */
-  overflow-wrap: break-word; /* 長い単語を適切に折り返し */
-  white-space: normal; /* 必要に応じて改行を許可 */
-  display: inline-block; /* 折り返しを有効にする */
-  max-width: 100%; /* 親要素の幅を超えないようにする */
-}
-.information-mail a:hover {
-  cursor: pointer;
-  color: #a9a9a9;
-  background-color: #fff;
-  opacity: 0.6;
-}
 
 .small-space {
   display: block;
