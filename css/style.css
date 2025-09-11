@@ -365,7 +365,6 @@ h1 {
   padding: 14.5px;
   transition: all 0.5s ease-in-out;
   height: 100%;
-  /* position: relative; */
 }
 .news-item a {
   display: flex;
@@ -631,6 +630,9 @@ h1 {
   white-space: nowrap;
   flex: 0 0 140px; /* 固定幅 */
 }
+.contact form input {
+  height: 40px;
+}
 
 .contact form input,
 .contact form textarea {
@@ -644,13 +646,16 @@ h1 {
   margin-left: 32px;
 }
 
+.contact form textarea {
+  height: 300px;
+}
+
 .contact form .button {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: calc(33 / 25);
   width: 200px;
   height: 50px;
-  /* padding: 5px 0; */
   background: #0D96A0;
   color: #fff;
   display: flex;
@@ -658,7 +663,7 @@ h1 {
   text-align: center;
   align-items: center;
   border-radius: 1rem;
-  margin: 22px auto 0;
+  margin: 50px auto 0;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -666,6 +671,11 @@ h1 {
   color: #a9a9a9;
   opacity: 0.5;
   /* background: red; */
+}
+
+.space1 {
+  display: inline-block;
+  padding-left: 1.3em;
 }
 .space2 {
   display: inline-block;
@@ -678,16 +688,6 @@ h1 {
 .contact form .button:hover {
   opacity: 0.6;
   transition: all 0.5s ease-in-out;
-}
-
-
-.small-space {
-  display: block;
-  margin-top: 12px; /* 上下の間隔を狭くする */
-}
-.access-time p5 br {
-  display: block;
-  margin-bottom: 10px; /* ここで行間を調整 */
 }
 
 
@@ -733,10 +733,6 @@ h1 {
   color: #ffffff;
   line-height: calc(33 / 20);
   margin-top: 20px;
-}
-.space1 {
-  display: inline-block;
-  padding-left: 1.3em;
 }
 .footer-contents {
   margin-top: 15px;
