@@ -232,6 +232,11 @@ h1 {
   line-height: calc(33 / 18);
   position: relative;
 }
+.about_title::before,
+.about_title::after {
+  content: none;
+}
+
 .about-box {
   text-align: center;
   width: 100%;
@@ -639,9 +644,13 @@ h1 {
   width: 100%;
   flex: 1;
   background: #fff;
-  padding: 8px;
+  padding: 8px 12px;
+  /* ↑入力欄の最初の文字の上、左の余白 */
   box-sizing: border-box;
   font-size: 1.6rem;
+  /* ↑入力欄の文字の大きさ */
+  font-family: inherit; 
+  /* ↑フォントも継承 */
   resize: none;
   margin-left: 32px;
 }
