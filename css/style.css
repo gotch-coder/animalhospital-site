@@ -245,34 +245,26 @@ h1 {
   text-align: center;
   width: 100%;
 }
-.footpath {
+/* .footpath {
   position: absolute;
   top: 55%;
   left: 84%;
-}
+} */
 /* .footpath img {
   width: 120px;
   width: 83px;
   height: auto;
 } */
-.about-box {
-  text-align: center;
-  width: 100%;
-  /* position: relative; */
-  /* background: url("images/icon_02.svg") no-repeat right 20px center, #fdd; */
-  /* background-size: 150px auto;  */
-  /* min-height: 200px; */
-}
-/* .about-text::after { */
-.about-box::after{
+.about-text::after {
+/* .about-box::after{ */
   content:'';
   position: absolute;
   top: 54%;
-  right: 7%;
+  /* right: 7%; */
+  left: 95%;
   width: 90px;
   height: 90px;
   background: url(../images/icon_03.svg) no-repeat right 20px ;
-
 }
 
 
