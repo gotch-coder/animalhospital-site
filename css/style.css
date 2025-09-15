@@ -9,9 +9,9 @@ body {
   overflow-x: hidden;
 }
 
-* {
+/* * {
     outline: 1px solid blue;
-  }
+  } */
 
 p, h1, h2, h3, h4, a ,summary{
   margin: 0;
@@ -64,7 +64,6 @@ h2 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  line-height: 1.32;
   position: relative;
   color: #505050;
 }
@@ -125,7 +124,6 @@ h2::after {
   transition: all 0.5s ease-in-out;
 }
 .title-icon {
-  /* display: flex; */
   margin-left: 9.9rem;
 }
 .title-text {
@@ -225,6 +223,12 @@ h1 {
   color: #0D96A0;
   margin-bottom: 11px;
 }
+@media (max-width: 767px) {
+  .about-box h2 {
+    font-size: 2.5rem;
+    line-height: calc(35 / 25);
+  }
+}
 .about-text {
   display: inline-block;
   font-size: 1.8rem;
@@ -309,6 +313,15 @@ h1 {
   word-break: keep-all;      /* 単語を分割せず改行（日本語でも有効） */
   line-break: strict;        /* 行末禁則処理を厳密に */
 }
+@media (max-width: 767px) {
+  .strength_title {
+    font-size: 2.0rem;
+    line-height: calc(30 / 20);
+    text-align: center;
+    width: 100%;
+    margin-top: 17px;
+  }
+}
 .summary3 {
   display: inline-block;
   font-size: 1.8rem;
@@ -343,7 +356,7 @@ h1 {
 }
 @media (max-width: 767px) {
   .service_title {
-    line-height: calc(30 / 25);
+    line-height: calc(30 / 20);
   }
 }
 .service-about {
@@ -363,12 +376,6 @@ h1 {
 }
 .news-date {
   margin-top: 47.5px;
-}
-  /* ニュースリスト全体 */
-#news .news-list {
-  display: flex;
-  flex-direction: column; /* スマホでは縦並び */
-  gap: 20px;
 }
 
 .title1 {
@@ -469,7 +476,6 @@ h1 {
   font-weight: bold;
   line-height: calc(25/ 20);
   color: #0D96A0;
-  /* margin: 0 45px 0 27px; */
   margin: 0 27px 0 27px;
   width: 16rem;
 }
@@ -503,19 +509,6 @@ h1 {
     margin-top: 6px;
   }
 }
-
-/* .news-date dl dd:nth-of-type(2) {
-  font-size: 1.7rem;
-  font-weight: 500;
-  line-height: calc(30 / 17);
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  width: 50rem;
-  color: #505050;
-} */
-
 
   /* access */
 #access {
@@ -582,9 +575,12 @@ h1 {
   font-weight: 500;
   line-height: calc(27 / 18);
 }
-/* .access-info__address-text {
-
-} */
+@media (max-width: 767px) {
+  .access-info__address-text {
+    font-size: 1.6rem;
+    line-height: calc(24 / 16);
+  }
+}
 .access-info__tel {
   font-size: 1.8rem;
   font-weight: 500;
@@ -635,17 +631,6 @@ h1 {
   margin: 0 0 8px;
 }
 
-
-
-/* #access figure figcaption tel p {
-  margin-top: 5px;
-} */
-/* @media (max-width: 768px) {
-  #access figure figcaption tel p {
-    margin-top: 5px;
-} */
-
-
 /* contact */
 #contact {
   padding-top: 61px;
@@ -688,7 +673,8 @@ h1 {
 }
 @media (max-width: 767px) {
   .contact form .form-row {
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: grid;
   }
 }
 .contact form label {
@@ -716,12 +702,17 @@ h1 {
   box-sizing: border-box;
   font-size: 1.6rem;
   /* ↑入力欄の文字の大きさ */
-  font-family: inherit; 
+  font-family: inherit;
   /* ↑フォントも継承 */
   resize: none;
   margin-left: 32px;
 }
-
+@media (max-width: 767px) {
+  .contact form input,
+  .contact form textarea {
+    margin-left: 0;
+  }
+}
 .contact form textarea {
   height: 300px;
 }
@@ -743,6 +734,14 @@ h1 {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
+@media (max-width: 767px) {
+  .contact form .button {
+    width: 100%;
+    height: 41px;
+    font-size: 2.0rem;
+    line-height: calc(26 / 20);
+  }
+}
 .contact form .button:hover {
   color: #a9a9a9;
   opacity: 0.5;
@@ -752,6 +751,11 @@ h1 {
 .space1 {
   display: inline-block;
   padding-left: 1.3em;
+}
+@media (max-width: 767px) {
+  .space1 {
+    padding-left: 0.9em;
+  }
 }
 .space2 {
   display: inline-block;
@@ -773,6 +777,12 @@ h1 {
   text-align: center;
   padding: 65px 0 80px;
 }
+@media (max-width: 767px) {
+  #footer {
+    padding-top: 41px;
+    padding-bottom: 49px;
+  }
+}
 .footer-box {
   display: flex;
   justify-content: center;
@@ -781,6 +791,15 @@ h1 {
   width: 737px;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  .footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    /* border-bottom: 1px solid #ffffff; */
+    padding-bottom: 23px;
+    width: 100%;
+  }
+}
 .footer-box a {
   font-size: 2.0rem;
   font-weight: bold;
@@ -788,6 +807,13 @@ h1 {
   line-height: 1.65;
   transition: all 0.5s ease-in-out;
 }
+@media (max-width: 767px) {
+  .footer-box a {
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+  }
+}
+
 .footer-box a:hover {
   opacity: 0.6;
   background-color: #505050;
@@ -797,11 +823,23 @@ h1 {
   column-gap: 15px;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .footer-nav-list {
+    column-gap: 18px;
+    flex-wrap: wrap;
+  }
+}
 .border {
   max-width: 740px;
   width: 90%;
   border-top: 1px solid #fff;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .border {
+    max-width: 335px;
+    width: 100%;
+  }
 }
 .copyright {
   font-size: 2.0rem;
@@ -809,6 +847,14 @@ h1 {
   color: #ffffff;
   line-height: calc(33 / 20);
   margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .copyright {
+    /* font-size: 1.6rem; */
+    font-size: clamp(1.4rem, 4.27vw, 1.6rem);
+    line-height: calc(33 / 16);
+    margin-top: 12px;
+  }
 }
 .footer-contents {
   margin-top: 15px;
@@ -840,7 +886,6 @@ h1 {
   h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    line-height: calc(33 / 25);
   }
   .inner {
     padding: 0 20px;
@@ -863,6 +908,9 @@ h1 {
     font-size: 2.0rem;
     line-height: calc(33 / 20);
     margin-left: 9.5px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 9px;
   }
   .title-icon {
     margin: 0;
@@ -908,29 +956,19 @@ h1 {
     margin-bottom: 0;
     text-align: center;
   }
-  h2 {
-    font-size: 2.5rem;
-    line-height: calc(35 / 25);
-    margin-bottom: 0;
-    text-align: center;
-  }
-  .footpath {
+
+  /* .footpath {
     position: absolute;
     width: 68px;
     height: 65px;
     top: calc(265 / 375* 100vw);
     left: calc(262 / 375* 100vw);
-  }
+  } */
   .about-text {
     font-size: 1.6rem;
     line-height: calc(30 / 16);
     text-align: left;
     margin-top: 16px;
-  }
-  p {
-    font-size: 1.6rem;
-    line-height: calc(30 / 16);
-    text-align: left;
   }
 
     /* .strength */
@@ -961,22 +999,6 @@ h1 {
   .strength figure:nth-of-type(2) figcaption {
     padding: 0;
   }
-  .summary1 {
-    font-size: 2.0rem;
-    line-height: calc(30 / 20);
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    margin-top: 17px;
-  }
-  h3 {
-    font-size: 2.0rem;
-    line-height: calc(30 / 20);
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    margin-top: 17px;
-  }
   .summary3 {
     font-size: 1.6rem;
     font-weight: 500;
@@ -997,33 +1019,13 @@ h1 {
     width: 100%;
     margin-top: 42px;
   }
-  .service-name {
-    line-height: calc(30 / 20);
-    margin-top: 21px;
-  }
-  h3 {
-    line-height: calc(30 / 20);
-    margin-top: 21px;
-  }
   .service-about {
     font-size: 1.6rem;
     line-height: calc(30 / 16);
     margin-top: 8px;
   }
 
-  /* news */
-  h5 {
-    margin: 0 165px 0 0;
-  }
-
-  #news dl {
-    display: block;
-    padding: 24px 0 26px 9px;
-  }
-  /* #news dl dt { */
-  /* #news dl h3 { */
-  /* #news dl dd:nth-of-type(2) {} */
-
+  /* news  } */
   /* time[datetime="0000-00-00"] { */
   .news-item time {
     width: 100%;
@@ -1034,8 +1036,6 @@ h1 {
     margin-left: 0;
   }
 
-
-
 /* .information-mail a {
   word-break: break-word;
   overflow-wrap: break-word;
@@ -1043,104 +1043,4 @@ h1 {
   display: inline;
 } */
 
-
-  /* contact */
-  #contact {
-    padding-top: 47px;
-    padding-bottom: 50px;
-  }
-  .contact-head {
-    margin-top: 38px;
-    line-height: calc(30 / 16);
-  }
-  .contact p {
-    text-align: left;
-    font-size: 1.6rem;
-  }
-  .contact form {
-    margin-top: 20px;
-  }
-  .contact form table tr {
-    flex-flow: column;
-  }
-  #contact form table tr th {
-    padding: 16px 0 0;
-  }
-  .contact form table tr td {
-    padding: 5px 0;
-    width: calc(325 / 375* 100vw);
-  }
-
-  .contact form table tr td input {
-    min-width: 100%;
-  }
-  .contact form table tr td textarea {
-    min-width: 100%;
-  }
-
-  #contact form table tr th {
-    font-size: 1.8rem;
-    line-height: calc(33 / 18);
-    display: block;
-    width: 100%;
-  }
-  .contact form .button {
-    width: calc(325 / 375* 100vw);
-    font-size: 2.0rem;
-    letter-spacing: 8px;
-    margin: 36px 0 auto;
-    height: 41px;
-  }
-  .space2 {
-    padding-left: 0;
-  }
-
-  /* label {
-    font-size: 1.8rem;
-    line-height: calc(33 / 18); */
-    /* ↓　合わせるためには使わない。中間域で左寄りになる！ */
-    /* display: block;
-    width: 100%;
-  } */
-
-
-  /* footer */
-  #footer {
-    padding-top: 41px;
-    padding-bottom: 49px;
-  }
-  .footer-box {
-    display: flex;
-    flex-wrap: wrap;
-    /* border-bottom: 1px solid #ffffff; */
-    padding-bottom: 23px;
-    width: 100%;
-  }
-  .border {
-    max-width: 335px;
-    width: 100%;
-  }
-  .footer-box a {
-    font-size: 1.8rem;
-    line-height: calc(33 / 18);
-  }
-  .footer-nav-list {
-    column-gap: 18px;
-    flex-wrap: wrap;
-  }
-  .footer-item a {
-  font-size: 1.8rem;
-  line-height: calc(33 / 18);
-  }
-  .copyright {
-  font-size: 1.6rem;
-  line-height: calc(33 / 16);
-  margin-top: 12px;
-  }
-  .footer-contents {
-  margin-top: 31px;
-  }
-  .space1 {
-    padding-left: 0.9em;
-  }
 }
