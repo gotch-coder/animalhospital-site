@@ -128,6 +128,9 @@ h2::after {
 }
 .title-text {
   margin-left: 1.1rem;
+  font-size: 1.8rem;
+  line-height: calc(33 / 18);
+  font-weight: bold;
 }
 .title-img {
   height: 50px;
@@ -221,7 +224,7 @@ h1 {
   font-weight: bold;
   line-height: calc(50 / 30);
   color: #0D96A0;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 }
 @media (max-width: 767px) {
   .about-box h2 {
@@ -259,7 +262,7 @@ h1 {
 /* .about-box::after{ */
   content:'';
   position: absolute;
-  top: 54%;
+  top: 30%;
   /* right: 7%; */
   left: 95%;
   width: 90px;
@@ -272,11 +275,11 @@ h1 {
 /* strength */
 #strength {
   width: 100%;
-  padding-top: 66px;
+  padding-top: 64px;
   padding-bottom: 69px;
 }
 .strength-contents {
-  margin-top: 50px;
+  margin-top: 48px;
 }
 .strength figure {
   display: flex;
@@ -290,7 +293,7 @@ h1 {
   padding: 0 3.5rem 0 0;
 }
 .strength figure:nth-of-type(2) figcaption {
-  padding: 0 0 0 4.0rem;
+  padding: 0 0 0 4.5rem;
 }
 .strength figure picture {
   width: 50%;
@@ -299,8 +302,7 @@ h1 {
   font-size: 2.2rem;
   font-weight: bold;
   line-height: calc(33 / 22);
-}
-.strength_title {
+  margin-bottom: 12px;
   white-space: normal;       /* 自然に改行 */
   word-break: keep-all;      /* 単語を分割せず改行（日本語でも有効） */
   line-break: strict;        /* 行末禁則処理を厳密に */
@@ -326,8 +328,8 @@ h1 {
 
 /* service */
 #service {
-  padding-top: 63px;
-  padding-bottom: 64px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .service-box {
   width: 30%;
@@ -356,13 +358,13 @@ h1 {
   font-weight: 500;
   text-align: left;
   line-height: calc(30 / 17);
-  margin-top: 6px;
+  margin-top: 11px;
 }
 
 
 /* news */
 #news {
-  padding-top: 65px;
+  padding-top: 61px;
   padding-bottom: 67px;
   background-color: #E6F4F5;
 }
@@ -468,7 +470,7 @@ h1 {
   font-weight: bold;
   line-height: calc(25/ 20);
   color: #0D96A0;
-  margin: 0 27px 0 27px;
+  margin: 0 45px 0 27px;
   width: 16rem;
 }
 @media (max-width: 767px) {
@@ -504,7 +506,7 @@ h1 {
 
   /* access */
 #access {
-  padding-top: 64px;
+  padding-top: 63px;
   padding-bottom: 70px;
 }
 .access__title {
@@ -559,7 +561,7 @@ h1 {
   font-size: 2.2rem;
   font-weight: bold;
   line-height:  calc(33 / 22);
-  margin-top: 6px;
+  margin-top: 5px;
 }
 .access-info__address-text {
   font-size: 1.8rem;
@@ -600,7 +602,7 @@ h1 {
 .access-info__mail {
   font-size: 1.8rem;
   font-weight: 500;
-  margin-top: 9px;
+  margin-top: 6px;
   line-height: calc(27 / 18);
 }
 .access-info__mail a:hover {
@@ -611,7 +613,7 @@ h1 {
 .access-info__hours {
   font-size: 1.8rem;
   font-weight: 500;
-  margin-top: 27px;
+  margin-top: 26px;
   padding: 18px 2px 9px;
   line-height: calc(40 / 18);
   border-top: 1px solid #707070;
@@ -635,7 +637,7 @@ h1 {
 }
 .contact__head {
   text-align: center;
-  margin-top: 26px;
+  margin-top: 25px;
   font-size: 1.7rem;
   font-weight: 500;
   line-height: calc(30 / 17);
@@ -646,7 +648,7 @@ h1 {
   }
 }
 .contact form {
- margin-top: 26px;
+ margin-top: 41px;
 }
 .form-group {
   display: flex;
@@ -658,14 +660,16 @@ h1 {
     display: grid;
   }
 }
-.contact form .form-row {
+/* .contact form .form-row { */
+.form-row {
   display: flex;
   align-items: flex-start;
   margin-bottom: 15px;
 }
 @media (max-width: 767px) {
-  .contact form .form-row {
+  /* .contact form .form-row { */
     /* flex-direction: column; */
+  .form-row {
     display: grid;
   }
 }
@@ -675,6 +679,7 @@ h1 {
   color: #505050;
   white-space: nowrap;
   flex: 0 0 140px; /* 固定幅 */
+  margin-top: 5px;
 }
 .contact form input {
   height: 40px;
@@ -751,11 +756,19 @@ h1 {
 }
 .space2 {
   display: inline-block;
-  padding-left: 0.4em;
+  padding-left: 0.3em;
 }
 .space3 {
   display: inline-block;
   padding-left: 1em;
+}
+.space4 {
+  display: inline-block;
+  padding-left: 1em;
+}
+.space5 {
+  display: inline-block;
+  padding-left: 0.5em;
 }
 .contact form .button:hover {
   opacity: 0.6;
@@ -838,7 +851,7 @@ h1 {
   font-weight: bold;
   color: #ffffff;
   line-height: calc(33 / 20);
-  margin-top: 20px;
+  margin-top: 28px;
 }
 @media (max-width: 767px) {
   .copyright {
@@ -849,7 +862,7 @@ h1 {
   }
 }
 .footer-contents {
-  margin-top: 15px;
+  margin-top: 9px;
   display: flex;
   column-gap: 12px;
   align-items: center;
