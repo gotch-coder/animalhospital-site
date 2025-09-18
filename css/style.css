@@ -260,12 +260,12 @@ h1 {
   width: 83px;
   height: auto;
 } */
-/* .about-text::after { */
-.about-box::after{
+.about-text::after {
+/* .about-box::after{ */
   content:'';
   position: absolute;
   top: 53%;
-  right: 7%;
+  right: 0;
   /* left: 95%; */
   width: 90px;
   height: 90px;
@@ -284,8 +284,19 @@ h1 {
   padding-top: 64px;
   padding-bottom: 69px;
 }
+@media (max-width: 767px) {
+    #strength {
+      padding-bottom: 29px;
+    }
+}
+
 .strength-contents {
   margin-top: 48px;
+}
+@media (max-width: 767px) {
+  .strength-contents {
+    margin-top: 40px;
+  }
 }
 .strength figure {
   display: flex;
@@ -319,7 +330,8 @@ h1 {
     line-height: calc(30 / 20);
     text-align: center;
     width: 100%;
-    margin-top: 17px;
+    margin-top: 15px;
+    margin-bottom: 0;
   }
 }
 .summary3 {
@@ -328,6 +340,19 @@ h1 {
   font-weight: 500;
   line-height: calc(33 / 18);
   margin-top: 2rem;
+}
+@media (max-width: 767px) {
+  .summary3 {
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+    margin-top: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .strength figure figcaption {
+    position: relative;
+    top: 7px; /* 上に移動 */
+  }
 }
 
 
@@ -956,15 +981,17 @@ h1 {
     margin-bottom: 6px;
     bottom: 0;
     padding-left: calc(20 / 375* 100vw);
-    padding-top: calc(16 / 375* 100vw);
+    /* padding-top: calc(16 / 375* 100vw); */
+    padding-top: calc(20 /375* 100vw);
     width: calc(311 / 375 *100vw);
-    height: calc(150 / 375 *100vw);
+    /* height: calc(150 / 375 *100vw); */
+    height: calc(155 / 375 *100vw);
   }
 
     /* about */
   #about {
-    padding-top: 43px;
-    padding-bottom: 43px;
+    padding-top: 38px;
+    padding-bottom: 39px;
   }
   .about-title {
     font-size: 2.5rem;
@@ -984,17 +1011,28 @@ h1 {
     font-size: 1.6rem;
     line-height: calc(30 / 16);
     text-align: left;
-    margin-top: 16px;
+    margin-top: 5px;
   }
 
     /* .strength */
   #strength {
-    padding-top: 45px;
+    padding-top: 47px;
     padding-bottom: 44px;
   }
-  .strength-contents {
-    margin-top: 48px;
+  
+  .section-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    color: #505050;
   }
+  /* @media (max-width: 767px) {
+  .section-title {
+    max-width: 335px;
+    width: 100%;
+  }
+} */
   .strength figure {
     flex-flow: column;
   }
@@ -1015,12 +1053,7 @@ h1 {
   .strength figure:nth-of-type(2) figcaption {
     padding: 0;
   }
-  .summary3 {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: calc(30 / 16);
-    margin-top: 8px;
-  }
+
 
   /* service */
   #service {
