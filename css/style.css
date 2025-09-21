@@ -264,12 +264,19 @@ h1 {
 /* .about-box::after{ */
   content:'';
   position: absolute;
-  top: 53%;
-  right: 0;
+  top: 30%;
+  right: -6%;
   /* left: 95%; */
   width: 90px;
   height: 90px;
   background: url(../images/icon_03.svg) no-repeat right 20px ;
+}
+@media (max-width: 767px) {
+  .about-text::after {
+    top: 55%;
+    right: 3%;
+    background: url(../images/icon_05.svg)no-repeat right 20px;
+  }
 }
 /* @media (max-width: 767px) {
   .about-text::after {
@@ -281,8 +288,8 @@ h1 {
 /* strength */
 #strength {
   width: 100%;
-  padding-top: 64px;
-  padding-bottom: 66px;
+  padding-top: 61px;
+  padding-bottom: 63px;
 }
 @media (max-width: 767px) {
     #strength {
@@ -292,7 +299,7 @@ h1 {
 }
 
 .strength-contents {
-  margin-top: 48px;
+  margin-top: 43px;
 }
 @media (max-width: 767px) {
   .strength-contents {
@@ -302,13 +309,12 @@ h1 {
 .strength figure {
   display: flex;
   align-items: center;
-}
-/* .strength figure:nth-of-type(2) {
-  margin: 46px 0;
-} */
-.strength figure {
-  margin-top: 41px;
+  /* margin-top: 41px; */
   /* margin-bottom: 46px; */
+}
+.strength figure:nth-of-type(2),
+.strength figure:nth-of-type(3) {
+  margin-top: 46px;
 }
 .strength figure figcaption {
   width: 50%;
@@ -324,7 +330,7 @@ h1 {
   font-size: 2.2rem;
   font-weight: bold;
   line-height: calc(33 / 22);
-  margin-bottom: 12px;
+  margin-bottom: 2px;
   white-space: normal;       /* 自然に改行 */
   word-break: keep-all;      /* 単語を分割せず改行（日本語でも有効） */
   line-break: strict;        /* 行末禁則処理を厳密に */
@@ -370,7 +376,7 @@ h1 {
 @media (max-width: 767px) {
   #service {
     padding-top: 45px;
-    padding-bottom: 32px;
+    padding-bottom: 35px;
   }
 }
 .service-box {
@@ -379,7 +385,13 @@ h1 {
 @media (max-width: 767px) {
   .service-box {
     width: 100%;
-    margin-top: 42px;
+    /* margin-top: 42px; */
+  }
+}
+@media (max-width: 767px) {
+  .service-box:nth-of-type(2),
+  .service-box:nth-of-type(3) {
+    margin-top: 39px;
   }
 }
 .service-flex {
@@ -393,7 +405,7 @@ h1 {
 @media (max-width: 767px) {
   .service-flex {
     display: block;
-    margin-top: 47px;
+    margin-top: 41px;
   }
 }
 
@@ -406,7 +418,7 @@ h1 {
 @media (max-width: 767px) {
   .service_title {
     line-height: calc(30 / 20);
-    margin-top: 23px;
+    margin-top: 24px;
   }
 }
 .service-about {
@@ -414,7 +426,7 @@ h1 {
   font-weight: 500;
   text-align: left;
   line-height: calc(30 / 17);
-  margin-top: 11px;
+  margin-top: 7px;
 }
 @media (max-width: 767px) {
 .service-about {
@@ -433,14 +445,18 @@ h1 {
 }
 @media (max-width: 767px) {
   #news {
-    padding-top: 41px;
-    padding-bottom: 37px;
+    padding-top: 45px;
+    padding-bottom: 50px;
   }
 }
 .news-date {
-  margin-top: 47.5px;
+  margin-top: 42.5px;
 }
-
+@media (max-width: 767px) {
+  .news-date {
+    margin-top: 42.5px;
+  }
+}
 .title1 {
   text-align: center;
   font-size: 2.5rem;
@@ -458,10 +474,10 @@ h1 {
   .news-item {
     margin: 0;
     width: 100%;
-    margin-top: 17px;
-    margin-bottom: 17px;
+    /* margin-top: 17px; */
+    /* margin-bottom: 17px; */
     display: block;
-    padding: 11.5px;
+    padding: 21.5px 10px 22.4px 10px;
   }
 }
 .news-item a {
@@ -548,7 +564,7 @@ h1 {
   font-weight: bold;
   line-height: calc(25/ 20);
   color: #0D96A0;
-  margin: 0 45px 0 27px;
+  margin: 0 50px 0 27px;
   width: 16rem;
 }
 @media (max-width: 767px) {
@@ -580,12 +596,29 @@ h1 {
     line-height: calc(24 / 16);
     margin-top: 7px;
   }
+  .news-item:nth-of-type(5) {
+    white-space: nowrap; /* 基本は改行させない */
+  }
 }
+
+@media (max-width: 374px) {
+  .news-item p {
+    white-space: normal;
+    word-break: break-word; /* はみ出しを防ぐ */
+  }
+}
+
 
   /* access */
 #access {
-  padding-top: 41px;
+  padding-top: 62px;
   padding-bottom: 70px;
+}
+@media (max-width: 767px) {
+  #access {
+    padding-top: 44px;
+    padding-bottom: 50px;
+  }
 }
 .access__title {
   font-size: 2.5rem;
@@ -645,6 +678,11 @@ h1 {
   line-height:  calc(33 / 22);
   margin-top: 5px;
 }
+@media (max-width: 767px) {
+  .access-info__title {
+    margin-top: 7px;
+  }
+}
 .access-info__address-text {
   font-size: 1.8rem;
   margin-top: 13px;
@@ -666,6 +704,8 @@ h1 {
 @media (max-width: 767px) {
   .access-info__tel {
     margin-top: 6px;
+    font-size: 1.6rem;
+    line-height: calc(27 / 16);
   }
 }
 .access-info__tel a {
@@ -673,17 +713,19 @@ h1 {
   font-weight: bold;
   line-height: calc(40 / 25);
   color: #0D96A0;
+  margin-left: 0;
+}
+@media (man-width: 767px) {
+  .access-info__tel a {
+    pointer-events: none;
+    /* margin-left: 13px; */
+  }
 }
 
 .access-info__tel a:hover {
   cursor: pointer;
   opacity: 0.6;
   transition: all 0.5s ease-in-out;
-}
-@media screen and (min-width: 768px) {
-  .access-info__tel a {
-    pointer-events: none;
-  }
 }
 
 .access-info__mail {
@@ -692,36 +734,45 @@ h1 {
   margin-top: 6px;
   line-height: calc(27 / 18);
 }
+@media (max-width: 767px) {
+  .access-info__mail {
+    font-size: 1.6rem;
+    line-height: calc(24 / 16);
+  }
+}
 .access-info__mail a:hover {
   cursor: pointer;
   opacity: 0.6;
   transition: all 0.5s ease-in-out;
 }
 .access-info__hours {
-  font-size: 1.8rem;
-  font-weight: 500;
   margin-top: 26px;
   padding: 18px 2px 9px;
-  line-height: calc(40 / 18);
   border-top: 1px solid #707070;
 }
 @media (max-width: 767px) {
   .access-info__hours {
-    margin-top: 12px;
+    margin-top: 14px;
     display: flex;
+    padding: 12px 2px 9px;
     flex-direction: column;
-    gap: 4px;
+    gap: 1px;
   }
 }
 .access-info__hours:last-of-type {
   border-bottom: 1px solid #707070;
 }
 .access-info__hours p {
-  margin: 0 0 8px;
+  /* margin: 0 0 8px; */
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: calc(40 / 18);
 }
 @media (max-width: 767px) {
   .access-info__hours p {
     margin: 0;
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
   }
 }
 
@@ -731,13 +782,19 @@ h1 {
   padding-bottom: 81px;
   width: 100%;
 }
+@media (max-width: 767px) {
+  #contact {
+    padding-top: 44px;
+    padding-bottom: 51px;
+  }
+}
 .contact__title {
   font-size: 2.5rem;
   font-weight: bold;
 }
 .contact__head {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 22px;
   font-size: 1.7rem;
   font-weight: 500;
   line-height: calc(30 / 17);
@@ -745,10 +802,18 @@ h1 {
 @media (max-width: 767px) {
   .contact__head {
     text-align: left;
+    margin-top: 41px;
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
   }
 }
 .contact form {
  margin-top: 41px;
+}
+@media (max-width: 767px) {
+  .contact form {
+    margin-top: 29px;
+  }
 }
 .form-group {
   display: flex;
@@ -758,17 +823,15 @@ h1 {
 @media (max-width: 767px) {
   .form-group {
     display: grid;
+    margin-top: 15px;
   }
 }
-/* .contact form .form-row { */
 .form-row {
   display: flex;
   align-items: flex-start;
   margin-bottom: 15px;
 }
 @media (max-width: 767px) {
-  /* .contact form .form-row { */
-    /* flex-direction: column; */
   .form-row {
     display: grid;
   }
@@ -778,8 +841,15 @@ h1 {
   font-weight: bold;
   color: #505050;
   white-space: nowrap;
+  line-height: calc(33 / 20);
   flex: 0 0 140px; /* 固定幅 */
-  margin-top: 5px;
+  margin-top: 4px;
+}
+@media (max-width: 767px) {
+  .contact form label {
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+  }
 }
 .contact form input {
   height: 40px;
@@ -787,6 +857,10 @@ h1 {
 @media (max-width: 767px) {
   .contact form input {
     margin-left: 0;
+    height: 50px; /* ← ここをカンプの高さに合わせて変更 */
+    padding: 8px 12px; /* ← 内側の余白も影響するので調整 */
+    box-sizing: border-box; /* ← border/padding を含めて高さを固定 */
+
   }
 }
 .contact form input,
@@ -827,7 +901,7 @@ h1 {
   text-align: center;
   align-items: center;
   border-radius: 1rem;
-  margin: 50px auto 0;
+  margin: 49px auto 0;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -837,6 +911,7 @@ h1 {
     height: 41px;
     font-size: 2.0rem;
     line-height: calc(26 / 20);
+    margin: 51px auto 0;
   }
 }
 .contact form .button:hover {
@@ -860,15 +935,18 @@ h1 {
 }
 .space3 {
   display: inline-block;
-  padding-left: 1em;
+  /* padding-left: 1em; */
+  padding-left: 0.8em;
 }
 .space4 {
   display: inline-block;
-  padding-left: 1em;
+  /* padding-left: 1em; */
+  padding-left: 0.8em;
 }
 .space5 {
   display: inline-block;
   padding-left: 0.5em;
+  /* padding-left: 0.8em; */
 }
 .contact form .button:hover {
   opacity: 0.6;
@@ -884,15 +962,15 @@ h1 {
 }
 @media (max-width: 767px) {
   #footer {
-    padding-top: 41px;
-    padding-bottom: 49px;
+    padding-top: 45px;
+    padding-bottom: 69px;
   }
 }
 .footer-box {
   display: flex;
   justify-content: center;
   /* border-bottom: 1px solid #ffffff; */
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   width: 737px;
   margin: 0 auto;
 }
@@ -901,7 +979,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     /* border-bottom: 1px solid #ffffff; */
-    padding-bottom: 23px;
+    padding-bottom: 18px;
     width: 100%;
   }
 }
@@ -958,15 +1036,20 @@ h1 {
     /* font-size: 1.6rem; */
     font-size: clamp(1.4rem, 4.27vw, 1.6rem);
     line-height: calc(33 / 16);
-    margin-top: 12px;
+    margin-top: 16px;
   }
 }
 .footer-contents {
-  margin-top: 9px;
+  margin-top: 7px;
   display: flex;
   column-gap: 12px;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .footer-contents {
+    margin-top: 27px;
+  }
 }
 .sns-item {
   display: flex;
@@ -1079,7 +1162,7 @@ h1 {
     margin-top: 5px;
   }
 
-    /* .strength */
+    /* strength */
 
   .section-title{
     font-size: 2.5rem;
@@ -1088,12 +1171,8 @@ h1 {
     text-align: center;
     color: #505050;
   }
-  /* @media (max-width: 767px) {
-  .section-title {
-    max-width: 335px;
-    width: 100%;
-  }
-} */
+
+
   .strength figure {
     flex-flow: column;
   }
@@ -1114,19 +1193,5 @@ h1 {
   .strength figure:nth-of-type(2) figcaption {
     padding: 0;
   }
-
-
-  /* service */
-
-
-  /* news  } */
-  /* time[datetime="0000-00-00"] { */
-
-/* .information-mail a {
-  word-break: break-word;
-  overflow-wrap: break-word;
-  white-space: nowrap;
-  display: inline;
-} */
 
 }
