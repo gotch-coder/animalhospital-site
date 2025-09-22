@@ -3,7 +3,6 @@
 /* 共通項目 */
 body {
   margin: 0;
-  /* font-family: "YuGothic", sans-serif; */
   font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -27,7 +26,6 @@ a {
 .inner {
   width: 910px;
   max-width: 100%;
-  /* width: 100%; */
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -250,16 +248,6 @@ h1 {
   text-align: center;
   width: 100%;
 }
-/* .footpath {
-  position: absolute;
-  top: 55%;
-  left: 84%;
-} */
-/* .footpath img {
-  width: 120px;
-  width: 83px;
-  height: auto;
-} */
 .about-text::after {
 /* .about-box::after{ */
   content:'';
@@ -278,11 +266,6 @@ h1 {
     background: url(../images/icon_05.svg)no-repeat right 20px;
   }
 }
-/* @media (max-width: 767px) {
-  .about-text::after {
-    left: 86%;
-  }
-} */
 
 
 /* strength */
@@ -309,8 +292,6 @@ h1 {
 .strength figure {
   display: flex;
   align-items: center;
-  /* margin-top: 41px; */
-  /* margin-bottom: 46px; */
 }
 .strength figure:nth-of-type(2),
 .strength figure:nth-of-type(3) {
@@ -385,7 +366,6 @@ h1 {
 @media (max-width: 767px) {
   .service-box {
     width: 100%;
-    /* margin-top: 42px; */
   }
 }
 @media (max-width: 767px) {
@@ -474,8 +454,6 @@ h1 {
   .news-item {
     margin: 0;
     width: 100%;
-    /* margin-top: 17px; */
-    /* margin-bottom: 17px; */
     display: block;
     padding: 21.5px 10px 22.4px 10px;
   }
@@ -496,53 +474,10 @@ h1 {
 .news-item:last-of-type {
   border-bottom: 1px solid #707070;
 }
-/* .news-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #707070;
-  pointer-events: none;
-}
-.news-item:last-of-type::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #707070;
-  pointer-events: none;
-} */
+
 .news-list {
   border-top: 1px solid #707070; /* 全体の上線 */
 }
-
-/* .news-item:not(:first-of-type)::before { */
-/* .news-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #707070;
-  pointer-events: none;
-} */
-
-/* .news-item:last-of-type::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #707070;
-  pointer-events: none;
-} */
-
 
 .news-item time {
   display: block;
@@ -664,7 +599,6 @@ h1 {
 #access figure figcaption {
   width: 390px;
   /* ↑これがないとコンテンツが右側にずれる。上の部分で中央寄せにしているため。 */
-  /* display: flex; */
   flex-direction: column;
 }
 @media (max-width: 767px) {
@@ -718,7 +652,6 @@ h1 {
 @media (man-width: 767px) {
   .access-info__tel a {
     pointer-events: none;
-    /* margin-left: 13px; */
   }
 }
 
@@ -763,7 +696,6 @@ h1 {
   border-bottom: 1px solid #707070;
 }
 .access-info__hours p {
-  /* margin: 0 0 8px; */
   font-size: 1.8rem;
   font-weight: 500;
   line-height: calc(40 / 18);
@@ -935,7 +867,6 @@ h1 {
 }
 .space3 {
   display: inline-block;
-  /* padding-left: 1em; */
   padding-left: 0.8em;
 }
 .space4 {
@@ -946,7 +877,6 @@ h1 {
 .space5 {
   display: inline-block;
   padding-left: 0.5em;
-  /* padding-left: 0.8em; */
 }
 .contact form .button:hover {
   opacity: 0.6;
@@ -969,7 +899,6 @@ h1 {
 .footer-box {
   display: flex;
   justify-content: center;
-  /* border-bottom: 1px solid #ffffff; */
   padding-bottom: 19px;
   width: 737px;
   margin: 0 auto;
@@ -978,7 +907,6 @@ h1 {
   .footer-box {
     display: flex;
     flex-wrap: wrap;
-    /* border-bottom: 1px solid #ffffff; */
     padding-bottom: 18px;
     width: 100%;
   }
@@ -1088,7 +1016,6 @@ h1 {
     margin-left: 0;
   }
   .header-content {
-    /* max-width: 375px; */
     max-width: 100%;
     margin-left: calc(22 / 375* 100vw);
   }
@@ -1129,10 +1056,8 @@ h1 {
     margin-bottom: 6px;
     bottom: 0;
     padding-left: calc(20 / 375* 100vw);
-    /* padding-top: calc(16 / 375* 100vw); */
     padding-top: calc(20 /375* 100vw);
     width: calc(311 / 375 *100vw);
-    /* height: calc(150 / 375 *100vw); */
     height: calc(155 / 375 *100vw);
   }
 
@@ -1148,13 +1073,6 @@ h1 {
     text-align: center;
   }
 
-  /* .footpath {
-    position: absolute;
-    width: 68px;
-    height: 65px;
-    top: calc(265 / 375* 100vw);
-    left: calc(262 / 375* 100vw);
-  } */
   .about-text {
     font-size: 1.6rem;
     line-height: calc(30 / 16);
