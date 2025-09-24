@@ -529,7 +529,8 @@ h1 {
 
 .news-item time {
   display: block;
-  font-size: clamp(1.1rem, 2vw, 1.7rem);
+  /* font-size: clamp(1.1rem, 2vw, 1.7rem); */
+  font-size: 1.7rem;
   line-height: calc(25 / 17);
   font-weight: bold;
   margin-left: 5px;
@@ -543,8 +544,10 @@ h1 {
   }
 }
 .news-item h3 {
-  font-size: clamp(1.4rem, 2vw, 2.0rem);
+  /* font-size: clamp(1.4rem, 2vw, 2.0rem); */
+  font-size: 2.0rem;
   font-weight: bold;
+  white-space: nowrap;
   line-height: calc(25/ 20);
   color: #0D96A0;
   margin: 0 50px 0 27px;
@@ -561,15 +564,19 @@ h1 {
 }
 /* .news-text { */
 .news-item p {
-  font-size: clamp(1.1rem, 2vw, 1.7rem);
+  /* font-size: clamp(1.1rem, 2vw, 1.7rem); */
+  font-size: 1.7rem;
   font-weight: 500;
   line-height: calc(30 / 17);
   margin: 0;
-  overflow: hidden;
+  flex: 1;
+  min-width: 0;
+  white-space: normal;
+  /* overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2; /* 2行で省略 */
-  width: 50rem;
+  -webkit-line-clamp: 2; 2行で省略 */
+  /* width: 50rem; */
   color: #505050;
 }
 @media (max-width: 767px) {
