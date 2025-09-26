@@ -3,12 +3,11 @@
 /* 共通項目 */
 body {
   margin: 0;
-  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
   font-style: normal;
   overflow-x: hidden;
 }
-
 
 /* * {
     outline: 1px solid blue;
@@ -29,6 +28,12 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
+@media (max-width: 767px) {
+  .inner {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
 img {
   width: 100%;
   /* ↓これを書くと全画面になる */
@@ -36,7 +41,7 @@ img {
 }
 
 /* PC */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .pc-none {
     display: none!important;
   }
@@ -44,9 +49,14 @@ img {
     display: none;
   }
 }
+/* SP */
+@media (max-width: 767px) {
+  .sp-none {
+    display: none!important;
+  }
+}
 
 /* 共通 */
-
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -66,14 +76,6 @@ h2 {
   font-weight: bold;
   position: relative;
   color: #505050;
-}
-.about_title {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  line-height: calc(50 / 30);
-  color: #505050;
-
 }
 
 h2::before {
@@ -103,6 +105,11 @@ h2::after {
   z-index: 100;
   height: 50px;
 }
+@media (max-width: 767px) {
+  #header {
+    width: 100%;
+  }
+}
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -112,7 +119,12 @@ h2::after {
   margin-right: calc(60 / 1080* 100vw);
   margin: 0 auto;
 }
-
+@media (max-width: 767px) {
+  .header-content {
+    max-width: 100%;
+    margin-left: calc(22 / 375* 100vw);
+  }
+}
 .title {
   font-size: 1.8rem;
   font-weight: bold;
@@ -126,11 +138,25 @@ h2::after {
 .title-icon {
   margin-left: 9.9rem;
 }
+@media (max-width: 767px) {
+  .title-icon {
+    margin: 0;
+  }
+}
 .title-text {
   margin-left: 1.1rem;
   font-size: 1.8rem;
   line-height: calc(33 / 18);
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .title-text {
+    font-size: 2.0rem;
+    line-height: calc(33 / 20);
+    margin-left: 9.5px;
+    margin-top: 8px;
+    margin-bottom: 9px;
+  }
 }
 .title-img {
   height: 50px;
@@ -180,6 +206,16 @@ h2::after {
   opacity: 0.5;
 }
 
+@media (max-width: 767px) {
+  .header-inner {
+    margin-left: 0;
+  }
+  .header-nav {
+    display: none;
+  }
+}
+
+
 /* main */
 #main {
   width: 100%;
@@ -205,6 +241,7 @@ h1 {
 
 .summary2 {
   font-weight: bold;
+  font-size: 4rem;
   line-height: calc(60 / 40);
   color: #0D96A0;
   display: block;
@@ -323,12 +360,27 @@ h1 {
   padding-bottom: 63px;
 }
 @media (max-width: 767px) {
-    #strength {
-      padding-top: 47px;
-      padding-bottom: 41px;
-    }
+  #strength {
+    padding-top: 47px;
+    padding-bottom: 41px;
+  }
 }
-
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  color: #505050;
+}
+@media (max-width: 767px) {
+  .section-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    color: #505050;
+  }
+}
 .strength-contents {
   margin-top: 43px;
 }
@@ -341,6 +393,11 @@ h1 {
   display: flex;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .strength figure {
+    flex-flow: column;
+  }
+}
 .strength figure:nth-of-type(2),
 .strength figure:nth-of-type(3) {
   margin-top: 46px;
@@ -349,19 +406,36 @@ h1 {
   width: 50%;
   padding: 0 3.5rem 0 0;
 }
+@media (max-width: 767px) {
+  .strength figure figcaption {
+    width: 100%;
+    padding: 0;
+  }
+}
 .strength figure:nth-of-type(2) figcaption {
   padding: 0 0 0 4.5rem;
+}
+@media (max-width: 767px) {
+  .strength figure:nth-of-type(2) figcaption {
+    padding: 0;
+  }
 }
 .strength figure picture {
   width: 50%;
 }
+@media (max-width: 767px) {
+  .strength figure picture {
+    width: 100%;
+  }
+}
+
 .strength_title {
   font-size: 2.2rem;
   font-weight: bold;
   line-height: calc(33 / 22);
   margin-bottom: 2px;
   white-space: normal;       /* 自然に改行 */
-  word-break: keep-all;      /* 単語を分割せず改行（日本語でも有効） */
+  /* word-break: keep-all;      単語を分割せず改行（日本語でも有効） */
   line-break: strict;        /* 行末禁則処理を厳密に */
 }
 @media (max-width: 767px) {
@@ -394,8 +468,15 @@ h1 {
     top: 7px; /* 上に移動 */
   }
 }
-
-
+@media (max-width: 767px) {
+  .strength figure:nth-of-type(1),
+  .strength figure:nth-of-type(3) {
+    flex-flow: column-reverse;
+  }
+  .strength figure:nth-of-type(2) {
+    margin: 50px 0;
+  }
+}
 
 /* service */
 #service {
@@ -529,7 +610,6 @@ h1 {
 
 .news-item time {
   display: block;
-  /* font-size: clamp(1.1rem, 2vw, 1.7rem); */
   font-size: 1.7rem;
   line-height: calc(25 / 17);
   font-weight: bold;
@@ -544,7 +624,6 @@ h1 {
   }
 }
 .news-item h3 {
-  /* font-size: clamp(1.4rem, 2vw, 2.0rem); */
   font-size: 2.0rem;
   font-weight: bold;
   white-space: nowrap;
@@ -564,7 +643,6 @@ h1 {
 }
 /* .news-text { */
 .news-item p {
-  /* font-size: clamp(1.1rem, 2vw, 1.7rem); */
   font-size: 1.7rem;
   font-weight: 500;
   line-height: calc(30 / 17);
@@ -576,7 +654,6 @@ h1 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2; 2行で省略 */
-  /* width: 50rem; */
   color: #505050;
 }
 @media (max-width: 767px) {
@@ -597,7 +674,6 @@ h1 {
     word-break: break-word; /* はみ出しを防ぐ */
   }
 }
-
 
   /* access */
 #access {
@@ -635,7 +711,8 @@ h1 {
 .map-wrap {
   position: relative;
   width: 100%;
-  max-width: 440px;
+  /* max-width: 440px; */
+  width: 440px;
   aspect-ratio: 440 / 300; /* 幅440:高さ300の比率を保つ */
 }
 @media (max-width: 767px) {
@@ -1038,7 +1115,6 @@ footer {
 }
 .sns-item {
   display: flex;
-  /* height: 100%; */
   transition: all 0.5s ease-in-out;
 }
 .sns-item:hover {
@@ -1053,81 +1129,3 @@ footer {
 }
 
 
-/* SP */
-@media screen and (max-width: 767px) {
-  /* 共通 */
-  .sp-none {
-    display: none!important;
-  }
-  /* * {
-    outline: 1px solid blue;
-  } */
-/* ↑全体の枠のラインを出すときに使用する */
-  h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  .inner {
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  /* header */
-  #header {
-    width: 100%;
-  }
-  .header-inner {
-    margin-left: 0;
-  }
-  .header-content {
-    max-width: 100%;
-    margin-left: calc(22 / 375* 100vw);
-  }
-  .title-text {
-    font-size: 2.0rem;
-    line-height: calc(33 / 20);
-    margin-left: 9.5px;
-    font-weight: bold;
-    margin-top: 8px;
-    margin-bottom: 9px;
-  }
-  .title-icon {
-    margin: 0;
-  }
-  .header-nav {
-    display: none;
-  }
-
-
-  /* strength */
-
-  .section-title{
-    font-size: 2.5rem;
-    font-weight: bold;
-    position: relative;
-    text-align: center;
-    color: #505050;
-  }
-
-  .strength figure {
-    flex-flow: column;
-  }
-  .strength figure:nth-of-type(1),
-  .strength figure:nth-of-type(3) {
-    flex-flow: column-reverse;
-  }
-  .strength figure picture {
-    width: 100%;
-  }
-  .strength figure figcaption {
-    width: 100%;
-    padding: 0;
-  }
-  .strength figure:nth-of-type(2) {
-    margin: 50px 0;
-  }
-  .strength figure:nth-of-type(2) figcaption {
-    padding: 0;
-  }
-
-}
