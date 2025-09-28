@@ -752,7 +752,8 @@ h1 {
 .access-info__address-text {
   font-size: 1.8rem;
   margin-top: 13px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  white-space: normal;
   font-weight: 500;
   line-height: calc(27 / 18);
 }
@@ -761,6 +762,9 @@ h1 {
     font-size: 1.6rem;
     line-height: calc(24 / 16);
   }
+}
+.span-br {
+  display: inline-block;
 }
 .access-info__tel {
   font-size: 1.8rem;
