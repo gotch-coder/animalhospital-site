@@ -331,7 +331,7 @@ h1 {
 .about-box {
   text-align: center;
   width: 100%;
-  /* position: relative; */
+  position: relative;
 }
 .about-text::after {
 /* .about-box::after{ */
@@ -343,6 +343,16 @@ h1 {
   height: 90px;
   background: url(../images/icon_03.svg) no-repeat right 5px ;
 }
+/* .about-box::after{
+  content:'';
+  position: absolute;
+  top:66%;
+  right: 0%;
+  width: 90px;
+  height: 90px;
+  background: url(../images/icon_03.svg) no-repeat right 5px ;
+} */
+
 @media (max-width: 767px) {
   .about-text::after {
     top: 55%;
@@ -357,7 +367,7 @@ h1 {
 #strength {
   width: 100%;
   padding-top: 61px;
-  padding-bottom: 63px;
+  padding-bottom: 67px;
 }
 @media (max-width: 767px) {
   #strength {
@@ -382,7 +392,7 @@ h1 {
   }
 }
 .strength-contents {
-  margin-top: 43px;
+  margin-top: 50px;
 }
 @media (max-width: 767px) {
   .strength-contents {
@@ -404,7 +414,7 @@ h1 {
 }
 .strength figure figcaption {
   width: 50%;
-  padding: 0 3.5rem 0 0;
+  padding: 0 44px 0 0;
 }
 @media (max-width: 767px) {
   .strength figure figcaption {
