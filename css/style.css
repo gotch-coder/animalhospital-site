@@ -26,7 +26,9 @@ a {
   /* width: 910px; */
   /* max-width: 100%; */
   /* max-width: 960px; */
-  max-width: 880px;
+  /* max-width: 880px; */
+  max-width: 920px;
+  padding: 0 20px;
   margin: 0 auto;
   /* padding: 0 15px; */
   /* padding: 0 30px; */
@@ -341,8 +343,8 @@ h1 {
   width: 100%;
   position: relative;
 }
-.about-text::after {
-/* .about-box::after{ */
+/* .about-text::after { */
+.about-box::after{
   content:'';
   position: absolute;
   top: 66%;
@@ -351,6 +353,16 @@ h1 {
   height: 90px;
   background: url(../images/icon_03.svg) no-repeat right 5px ;
 }
+/* .about-box::before{
+  content:'';
+  position: absolute;
+  top: 66%;
+  right: -3%;
+  width: 90px;
+  height: 90px;
+  background: url(../images/icon_03.svg) no-repeat right 5px ;
+} */
+
 /* .about-box::after{
   content:'';
   position: absolute;
