@@ -263,7 +263,7 @@
               お問い合わせいただいてから3日以内の返信となります。
             </h3>
 
-              <form action="" method="post">
+              <!-- <form action="" method="post">
                 <div class="form-row">
                   <label for="name">お名前</label>
                   <input type="text" id="name" name="name" required>
@@ -282,7 +282,29 @@
 
                 <button class="button" type="submit">送
                   <span class="space2">信</span></button>
+              </form> -->
+
+              <form action="" method="post">
+                <div class="form-item">
+                  <label for="name">お名前</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-item">
+                  <label for="email">メールアドレス</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-item">
+                  <label for="message">内<span class="space3">容</span></label>
+                  <textarea id="message" name="message" rows="9" required></textarea>
+                </div>
+
+                <button class="button" type="submit">
+                  送<span class="space2">信</span>
+                </button>
               </form>
+
 
         </div>
       </section>
