@@ -314,6 +314,7 @@ h1 {
   font-weight: 500;
   line-height: calc(33 / 18);
   white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 @media (max-width: 767px) {
   .about-text {
@@ -828,7 +829,7 @@ h1 {
 }
 .access-info__hours {
   margin-top: 26px;
-  padding: 18px 2px 9px;
+  padding: 15px 2px 14px;
   border-top: 1px solid #707070;
 }
 @media (max-width: 767px) {
@@ -859,7 +860,7 @@ h1 {
 /* contact */
 #contact {
   padding-top: 61px;
-  padding-bottom: 81px;
+  padding-bottom: 78px;
   width: 100%;
 }
 @media (max-width: 767px) {
@@ -888,17 +889,20 @@ h1 {
   }
 }
 .contact form {
- margin-top: 41px;
+ margin-top: 39px;
 }
 @media (max-width: 767px) {
   .contact form {
     margin-top: 29px;
   }
 }
+
+/* ↑ここまでは固定 */
+
 .form-group {
   display: flex;
   align-items: flex-start;
-  margin-top: 30px;
+  margin-top: 31px;
 }
 @media (max-width: 767px) {
   .form-group {
@@ -916,6 +920,18 @@ h1 {
     display: grid;
   }
 }
+.form-row,
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .form-row,
+  .form-group {
+    display: grid;
+  }
+}
 .contact form label {
   font-size: 2rem;
   font-weight: bold;
@@ -923,12 +939,23 @@ h1 {
   white-space: nowrap;
   line-height: calc(33 / 20);
   flex: 0 0 140px; /* 固定幅 */
-  /* margin-top: 4px; */
+  margin-top: 4px;
 }
 @media (max-width: 767px) {
   .contact form label {
     font-size: 1.8rem;
     line-height: calc(33 / 18);
+  }
+}
+.contact form label {
+  flex: 0 0 140px; /* 固定幅 */
+  margin-right: 32px; /* ← margin-leftではなくこちらに変更 */
+  margin-top: 4px;
+}
+@media (max-width: 767px) {
+  .contact form label {
+    margin-right: 0;
+    margin-bottom: 8px;
   }
 }
 .contact form input {
@@ -967,6 +994,133 @@ h1 {
 .contact form textarea {
   height: 300px;
 }
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  flex: 1;
+  background: #fff;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: inherit;
+  resize: none;
+  margin-left: 0; /* ← 削除または0に */
+}
+
+/* ↑ここまで半分修正済み */
+
+/* 1. form-row と form-group を統一 */
+.form-row,
+.form-group {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px; /* 上下揃うように統一 */
+}
+@media (max-width: 767px) {
+  .form-row,
+  .form-group {
+    display: grid;
+  }
+}
+/* 2. ラベル幅と余白の関係を見直す */
+.contact form label {
+  flex: 0 0 140px; /* 固定幅 */
+  margin-right: 32px; /* ← margin-leftではなくこちらに変更 */
+  margin-top: 4px;
+}
+@media (max-width: 767px) {
+  .contact form label {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
+
+/* 3. 入力欄の左余白は削除 */
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  flex: 1;
+  background: #fff;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: inherit;
+  resize: none;
+  margin-left: 0; /* ← 削除または0に */
+}
+
+/* ここからさらに修正版 */
+.contact form {
+  margin-top: 39px;
+}
+
+.form-item {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 31px;
+}
+
+@media (max-width: 767px) {
+  .form-item {
+    display: grid;
+    margin-top: 15px;
+  }
+}
+
+.contact form label {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #505050;
+  white-space: nowrap;
+  line-height: calc(33 / 20);
+  flex: 0 0 140px; /* ラベル固定幅 */
+  margin-right: 32px; /* ← 入力欄との間隔 */
+  margin-top: 4px;
+}
+
+@media (max-width: 767px) {
+  .contact form label {
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  flex: 1;
+  background: #fff;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: inherit;
+  resize: none;
+  margin-left: 0; /* ← ここがズレ防止のポイント */
+}
+
+.contact form input {
+  height: 40px;
+}
+
+@media (max-width: 767px) {
+  .contact form input {
+    height: 50px;
+  }
+}
+
+.contact form textarea {
+  height: 300px;
+}
+
+
+
+
+
+
+
 
 .contact form .button {
   font-size: 2.5rem;
@@ -1046,7 +1200,7 @@ footer {
 .footer-box {
   display: flex;
   justify-content: center;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   width: 737px;
   margin: 0 auto;
 }
