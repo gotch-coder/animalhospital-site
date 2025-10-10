@@ -322,6 +322,8 @@ h1 {
     line-height: calc(30 / 16);
     text-align: left;
     margin-top: 16px;
+    white-space: normal;
+    position: relative;
     z-index: 1;
   }
 }
@@ -770,6 +772,7 @@ h1 {
   .access-info__address-text {
     font-size: 1.6rem;
     line-height: calc(24 / 16);
+    margin-top: 11px;
   }
 }
 .span-br {
@@ -899,7 +902,7 @@ h1 {
 
 /* ↑ここまでは固定 */
 
-.form-group {
+/* .form-group {
   display: flex;
   align-items: flex-start;
   margin-top: 31px;
@@ -931,14 +934,14 @@ h1 {
   .form-group {
     display: grid;
   }
-}
-.contact form label {
+} */
+/* .contact form label {
   font-size: 2rem;
   font-weight: bold;
   color: #505050;
   white-space: nowrap;
   line-height: calc(33 / 20);
-  flex: 0 0 140px; /* 固定幅 */
+  flex: 0 0 140px; 
   margin-top: 4px;
 }
 @media (max-width: 767px) {
@@ -946,10 +949,10 @@ h1 {
     font-size: 1.8rem;
     line-height: calc(33 / 18);
   }
-}
-.contact form label {
-  flex: 0 0 140px; /* 固定幅 */
-  margin-right: 32px; /* ← margin-leftではなくこちらに変更 */
+} */
+/* .contact form label {
+  flex: 0 0 140px; 
+  margin-right: 32px; 
   margin-top: 4px;
 }
 @media (max-width: 767px) {
@@ -957,31 +960,31 @@ h1 {
     margin-right: 0;
     margin-bottom: 8px;
   }
-}
-.contact form input {
+} */
+/* .contact form input {
   height: 40px;
 }
 @media (max-width: 767px) {
   .contact form input {
     margin-left: 0;
-    height: 50px; /* ← ここをカンプの高さに合わせて変更 */
-    padding: 8px 12px; /* ← 内側の余白も影響するので調整 */
-    box-sizing: border-box; /* ← border/padding を含めて高さを固定 */
+    height: 50px; 
+    padding: 8px 12px; 
+    box-sizing: border-box; 
 
   }
-}
-.contact form input,
+} */
+/* .contact form input,
 .contact form textarea {
   width: 100%;
   flex: 1;
   background: #fff;
   padding: 8px 12px;
-  /* ↑入力欄の最初の文字の上、左の余白 */
+  
   box-sizing: border-box;
   font-size: 1.6rem;
-  /* ↑入力欄の文字の大きさ */
+  
   font-family: inherit;
-  /* ↑フォントも継承 */
+  
   resize: none;
   margin-left: 32px;
 }
@@ -993,9 +996,9 @@ h1 {
 }
 .contact form textarea {
   height: 300px;
-}
+} */
 
-.contact form input,
+/* .contact form input,
 .contact form textarea {
   width: 100%;
   flex: 1;
@@ -1005,28 +1008,28 @@ h1 {
   font-size: 1.6rem;
   font-family: inherit;
   resize: none;
-  margin-left: 0; /* ← 削除または0に */
-}
+  margin-left: 0; 
+} */
 
 /* ↑ここまで半分修正済み */
 
 /* 1. form-row と form-group を統一 */
-.form-row,
+/* .form-row,
 .form-group {
   display: flex;
   align-items: flex-start;
-  margin-top: 30px; /* 上下揃うように統一 */
+  margin-top: 30px; 
 }
 @media (max-width: 767px) {
   .form-row,
   .form-group {
     display: grid;
   }
-}
+} */
 /* 2. ラベル幅と余白の関係を見直す */
-.contact form label {
-  flex: 0 0 140px; /* 固定幅 */
-  margin-right: 32px; /* ← margin-leftではなくこちらに変更 */
+/* .contact form label {
+  flex: 0 0 140px; 
+  margin-right: 32px; 
   margin-top: 4px;
 }
 @media (max-width: 767px) {
@@ -1034,10 +1037,10 @@ h1 {
     margin-right: 0;
     margin-bottom: 8px;
   }
-}
+} */
 
 /* 3. 入力欄の左余白は削除 */
-.contact form input,
+/* .contact form input,
 .contact form textarea {
   width: 100%;
   flex: 1;
@@ -1047,14 +1050,18 @@ h1 {
   font-size: 1.6rem;
   font-family: inherit;
   resize: none;
-  margin-left: 0; /* ← 削除または0に */
-}
+  margin-left: 0; 
+} */
 
 /* ここからさらに修正版 */
 .contact form {
   margin-top: 39px;
 }
-
+@media (max-width: 767px) {
+  .contact form {
+    margin-top: 36px;
+  }
+}
 .form-item {
   display: flex;
   align-items: flex-start;
@@ -1084,7 +1091,8 @@ h1 {
     font-size: 1.8rem;
     line-height: calc(33 / 18);
     margin-right: 0;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
+    margin-top: 3px;
   }
 }
 
@@ -1156,7 +1164,7 @@ h1 {
 
 .space1 {
   display: inline-block;
-  padding-left: 1.3em;
+  padding-left: 1.2em;
 }
 @media (max-width: 767px) {
   .space1 {
@@ -1193,7 +1201,7 @@ footer {
 }
 @media (max-width: 767px) {
   footer {
-    padding-top: 45px;
+    padding-top: 44px;
     padding-bottom: 69px;
   }
 }
@@ -1239,7 +1247,7 @@ footer {
   .footer-nav-list {
     column-gap: 18px;
     flex-wrap: wrap;
-    margin-top: 2px;
+    /* margin-top: 2px; */
   }
 }
 .border {
