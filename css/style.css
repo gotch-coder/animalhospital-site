@@ -9,9 +9,9 @@ body {
   overflow-x: hidden;
 }
 
-/* * {
+* {
     outline: 1px solid blue;
-  } */
+  }
 
 p, h1, h2, h3, h4, a ,summary{
   margin: 0;
@@ -29,7 +29,7 @@ a {
   box-sizing: border-box;
 }
 @media (max-width: 767px) {
-  inner {
+  .inner {
     padding: 0 20px;
   }
 }
@@ -403,10 +403,13 @@ h1 {
 .strength figure {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 @media (max-width: 767px) {
   .strength figure {
     flex-flow: column;
+    gap: 16px;
   }
 }
 .strength figure:nth-of-type(2) {
@@ -417,7 +420,8 @@ h1 {
 }
 .strength figure figcaption {
   width: 50%;
-  padding: 0 44px 0 0;
+  /* padding: 0 44px 0 0; */
+  padding: 0;
 }
 @media (max-width: 767px) {
   .strength figure figcaption {
@@ -426,7 +430,8 @@ h1 {
   }
 }
 .strength figure:nth-of-type(2) figcaption {
-  padding: 0 0 0 4.5rem;
+  /* padding: 0 0 0 4.5rem; */
+  padding: 0;
 }
 @media (max-width: 767px) {
   .strength figure:nth-of-type(2) figcaption {
