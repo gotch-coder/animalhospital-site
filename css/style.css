@@ -23,10 +23,8 @@ a {
 }
 
 .inner {
-  /* max-width: 920px; */
-  max-width: 1080px;
-  /* padding: 0 20px; */
-  padding: 0 100px;
+  max-width: 920px;
+  padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -217,7 +215,7 @@ h2::after {
 }
 
 section {
-  scroll-margin-top: 50px; /* ヘッダーの高さに合わせる */
+  scroll-margin-top: 50px;
 }
 
 
@@ -315,8 +313,6 @@ h1 {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: calc(33 / 18);
-  /* white-space: nowrap; */
-  /* overflow-wrap: anywhere; */
   overflow-wrap: normal;
   word-break: keep-all;
   white-space: normal;
@@ -330,9 +326,6 @@ h1 {
     text-align: left;
     margin-top: 16px;
     word-break: normal;
-    /* white-space: normal; */
-    /* overflow-wrap: break-word; */
-    /* word-break: keep-all; */
     position: relative;
     z-index: 1;
   }
@@ -429,9 +422,7 @@ h1 {
   margin-top: 46px;
 }
 .strength figure figcaption {
-  /* width: 50%; */
   width: calc(396 / 880 * 100%);
-  /* padding: 0 44px 0 0; */
   padding: 0;
 }
 @media (max-width: 767px) {
@@ -441,7 +432,6 @@ h1 {
   }
 }
 .strength figure:nth-of-type(2) figcaption {
-  /* padding: 0 0 0 4.5rem; */
   padding: 0;
 }
 @media (max-width: 767px) {
@@ -450,7 +440,6 @@ h1 {
   }
 }
 .strength figure picture {
-  /* width: 50%; */
   width: calc(440 / 880 * 100%);
 }
 @media (max-width: 767px) {
@@ -464,9 +453,8 @@ h1 {
   font-weight: bold;
   line-height: calc(33 / 22);
   margin-bottom: 6px;
-  white-space: normal;       /* 自然に改行 */
-  /* word-break: keep-all;      単語を分割せず改行（日本語でも有効） */
-  line-break: strict;        /* 行末禁則処理を厳密に */
+  white-space: normal;
+  line-break: strict;
 }
 @media (max-width: 767px) {
   .strength_title {
@@ -474,7 +462,6 @@ h1 {
     line-height: calc(30 / 20);
     text-align: center;
     width: 100%;
-    /* margin-top: 16px; */
     margin-top: 1px;
     margin-bottom: 0;
   }
@@ -496,7 +483,7 @@ h1 {
 @media (max-width: 767px) {
   .strength figure figcaption {
     position: relative;
-    top: 7px; /* 上に移動 */
+    top: 7px;
   }
 }
 @media (max-width: 767px) {
@@ -636,7 +623,7 @@ h1 {
 }
 
 .news-list {
-  border-top: 1px solid #707070; /* 全体の上線 */
+  border-top: 1px solid #707070;
 }
 
 .news-item time {
@@ -701,7 +688,7 @@ h1 {
 @media (max-width: 374px) {
   .news-item p {
     white-space: normal;
-    word-break: break-word; /* はみ出しを防ぐ */
+    word-break: break-word;
   }
 }
 
@@ -736,17 +723,16 @@ h1 {
 }
 #access iframe {
   border: 0;
-  display: block;    /* 不要な余白防止 */
+  display: block;
 }
 .map-wrap {
   position: relative;
   width: 100%;
   width: 440px;
-  aspect-ratio: 440 / 300; /* 幅440:高さ300の比率を保つ */
+  aspect-ratio: 440 / 300;
 }
 @media (max-width: 767px) {
   .map-wrap {
-    /* max-width: 100%; */
     width: 100%;
   }
 }
@@ -918,160 +904,6 @@ h1 {
   }
 }
 
-/* ↑ここまでは固定 */
-
-/* .form-group {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 31px;
-}
-@media (max-width: 767px) {
-  .form-group {
-    display: grid;
-    margin-top: 15px;
-  }
-}
-.form-row {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 15px;
-}
-@media (max-width: 767px) {
-  .form-row {
-    display: grid;
-  }
-}
-.form-row,
-.form-group {
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
-}
-@media (max-width: 767px) {
-  .form-row,
-  .form-group {
-    display: grid;
-  }
-} */
-/* .contact form label {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #505050;
-  white-space: nowrap;
-  line-height: calc(33 / 20);
-  flex: 0 0 140px; 
-  margin-top: 4px;
-}
-@media (max-width: 767px) {
-  .contact form label {
-    font-size: 1.8rem;
-    line-height: calc(33 / 18);
-  }
-} */
-/* .contact form label {
-  flex: 0 0 140px; 
-  margin-right: 32px; 
-  margin-top: 4px;
-}
-@media (max-width: 767px) {
-  .contact form label {
-    margin-right: 0;
-    margin-bottom: 8px;
-  }
-} */
-/* .contact form input {
-  height: 40px;
-}
-@media (max-width: 767px) {
-  .contact form input {
-    margin-left: 0;
-    height: 50px; 
-    padding: 8px 12px; 
-    box-sizing: border-box; 
-
-  }
-} */
-/* .contact form input,
-.contact form textarea {
-  width: 100%;
-  flex: 1;
-  background: #fff;
-  padding: 8px 12px;
-  
-  box-sizing: border-box;
-  font-size: 1.6rem;
-  
-  font-family: inherit;
-  
-  resize: none;
-  margin-left: 32px;
-}
-@media (max-width: 767px) {
-  .contact form input,
-  .contact form textarea {
-    margin-left: 0;
-  }
-}
-.contact form textarea {
-  height: 300px;
-} */
-
-/* .contact form input,
-.contact form textarea {
-  width: 100%;
-  flex: 1;
-  background: #fff;
-  padding: 8px 12px;
-  box-sizing: border-box;
-  font-size: 1.6rem;
-  font-family: inherit;
-  resize: none;
-  margin-left: 0; 
-} */
-
-/* ↑ここまで半分修正済み */
-
-/* 1. form-row と form-group を統一 */
-/* .form-row,
-.form-group {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 30px; 
-}
-@media (max-width: 767px) {
-  .form-row,
-  .form-group {
-    display: grid;
-  }
-} */
-/* 2. ラベル幅と余白の関係を見直す */
-/* .contact form label {
-  flex: 0 0 140px; 
-  margin-right: 32px; 
-  margin-top: 4px;
-}
-@media (max-width: 767px) {
-  .contact form label {
-    margin-right: 0;
-    margin-bottom: 8px;
-  }
-} */
-
-/* 3. 入力欄の左余白は削除 */
-/* .contact form input,
-.contact form textarea {
-  width: 100%;
-  flex: 1;
-  background: #fff;
-  padding: 8px 12px;
-  box-sizing: border-box;
-  font-size: 1.6rem;
-  font-family: inherit;
-  resize: none;
-  margin-left: 0; 
-} */
-
-/* ここからさらに修正版 */
 .contact form {
   margin-top: 39px;
 }
@@ -1085,7 +917,6 @@ h1 {
   align-items: flex-start;
   margin-top: 31px;
 }
-
 @media (max-width: 767px) {
   .form-item {
     display: grid;
@@ -1099,17 +930,15 @@ h1 {
   color: #505050;
   white-space: nowrap;
   line-height: calc(33 / 20);
-  flex: 0 0 140px; /* ラベル固定幅 */
-  margin-right: 32px; /* ← 入力欄との間隔 */
+  flex: 0 0 140px;
+  margin-right: 32px;
   margin-top: 4px;
 }
-
 @media (max-width: 767px) {
   .contact form label {
     font-size: 1.8rem;
     line-height: calc(33 / 18);
     margin-right: 0;
-    /* margin-bottom: 8px; */
     margin-top: 3px;
   }
 }
@@ -1124,13 +953,12 @@ h1 {
   font-size: 1.6rem;
   font-family: inherit;
   resize: none;
-  margin-left: 0; /* ← ここがズレ防止のポイント */
+  margin-left: 0;
 }
 
 .contact form input {
   height: 40px;
 }
-
 @media (max-width: 767px) {
   .contact form input {
     height: 50px;
@@ -1140,14 +968,6 @@ h1 {
 .contact form textarea {
   height: 300px;
 }
-
-
-
-
-
-
-
-
 .contact form .button {
   font-size: 2.5rem;
   font-weight: bold;
@@ -1227,7 +1047,6 @@ footer {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
-  /* width: 737px; */
   margin: 0 auto;
 }
 @media (max-width: 767px) {
@@ -1265,11 +1084,10 @@ footer {
   .footer-nav-list {
     column-gap: 18px;
     flex-wrap: wrap;
-    /* margin-top: 2px; */
   }
 }
 .footer-nav-list li {
-  white-space: nowrap; /* 単語の途中で折り返さない */
+  white-space: nowrap;
 }
 .border {
   max-width: 740px;
@@ -1292,7 +1110,6 @@ footer {
 }
 @media (max-width: 767px) {
   .copyright {
-    /* font-size: 1.6rem; */
     font-size: clamp(1.4rem, 4.27vw, 1.6rem);
     line-height: calc(33 / 16);
     margin-top: 16px;
@@ -1318,11 +1135,9 @@ footer {
   opacity: 0.6;
 }
 .sns-item a {
-  display: inline-block; /* リンクを画像サイズに合わせる */
+  display: inline-block;
 }
-
 .sns-item img {
-  display: block; /* インライン画像の余白を消す */
+  display: block;
 }
-
 
